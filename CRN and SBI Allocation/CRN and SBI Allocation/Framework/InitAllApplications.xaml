@@ -1,0 +1,313 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Initialize_Applications" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:r="clr-namespace:Reusable_Components;assembly=Reusable Components" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Diagnostics;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="inout_Config" Type="InOutArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="OUT_browserCRM" Type="OutArgument(ui:Browser)" />
+    <x:Property Name="OUT_browserRP" Type="OutArgument(ui:Browser)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>925,1864</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="28">
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>TimeSpan2</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="935,1799" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sco:Collection(sd:Process)" Name="collProcesses" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="893,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Opening applications...&quot;]" />
+    <ui:GetProcesses ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Retrieve open processes to check if required applications are already open e.g. Outlook" DisplayName="Get Open Processes" sap:VirtualizedContainerService.HintSize="893,82" sap2010:WorkflowViewState.IdRef="GetProcesses_1" Processes="[collProcesses]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetProcesses>
+    <TryCatch DisplayName="Try Open CRM" sap:VirtualizedContainerService.HintSize="893,52" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="Open CRM" sap:VirtualizedContainerService.HintSize="855,826" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Name="boolCRMOpen" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="813,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Opening CRM&quot;]" />
+          <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all open processes looking for CRM" DisplayName="Check for CRM Process " sap:VirtualizedContainerService.HintSize="813,96" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[collProcesses]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="sd:Process">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Process" Name="process" />
+                </ActivityAction.Argument>
+                <If Condition="[process.ToString.ToLower.Contains(&quot;crm&quot;)]" DisplayName="Process is CRM?" sap:VirtualizedContainerService.HintSize="484,364" sap2010:WorkflowViewState.IdRef="If_3">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[boolCRMOpen]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+                    </Sequence>
+                  </If.Then>
+                </If>
+              </ActivityAction>
+            </ui:ForEach.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEach>
+          <If Condition="[boolCRMOpen]" DisplayName="CRM Open?" sap:VirtualizedContainerService.HintSize="813,312" sap2010:WorkflowViewState.IdRef="If_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'CRM'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="8e45f168d88400e3c81f96f8f8b88f52" Selector="&lt;html app='msedge.exe' title='My Dashboard - Dynamics 365' /&gt;&#xA;" UiBrowser="[OUT_browserCRM]">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </If.Then>
+            <If.Else>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Applications\Open CRM.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserCRM">
+                    <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="OUT_browserCRM" />
+                  </OutArgument>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="IN_dictConfig">
+                    <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="inout_Config" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="IN_intTimeout">
+                    <Literal x:TypeArguments="x:Int32" Value="30000" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </If.Else>
+          </If>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="813,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Applications\Navigate to CRM Queue and View.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[OUT_browserCRM]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="859,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <r:Generic_PopUp OUT_ProcessType="{x:Null}" DisplayName="User Assistance Form" sap:VirtualizedContainerService.HintSize="200,22" IN_CSS_filepath="[&quot;/file://&quot; + Directory.GetCurrentDirectory + &quot;\Assets\Generic\InitialisationException.css&quot;]" IN_ErrorMessage="The stop button was pressed" IN_PopupMessage="&lt;h1&gt;User assistance required&lt;/h1&gt;&lt;P&gt; I've encountered a problem initialising CRM in Edge.&lt;/P&gt;&lt;P&gt; Please ensure the application is open then click Continue.&lt;/P&gt;&lt;BR&gt;" IN_PopupTitle="Department for Environment, Food and Rural Affairs" IN_WidthHeight="[{500,300}]" sap2010:WorkflowViewState.IdRef="Generic_PopUp_1" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch DisplayName="Try Open Rural Payments" sap:VirtualizedContainerService.HintSize="893,1329" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="Open Rural Payments" sap:VirtualizedContainerService.HintSize="855,1097" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Name="boolRuralPaymentsOpen" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="813,93" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Opening Rural Payments&quot;]" />
+          <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all open processes looking for Rural Payments" DisplayName="Check for Rural Payments Process " sap:VirtualizedContainerService.HintSize="813,520" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[collProcesses]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="sd:Process">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Process" Name="process" />
+                </ActivityAction.Argument>
+                <If Condition="[process.ToString.ToLower.Contains(&quot;rural payments&quot;)]" DisplayName="Process is Rural Payments?" sap:VirtualizedContainerService.HintSize="484,364" sap2010:WorkflowViewState.IdRef="If_5">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[boolRuralPaymentsOpen]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_2" />
+                    </Sequence>
+                  </If.Then>
+                </If>
+              </ActivityAction>
+            </ui:ForEach.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEach>
+          <If Condition="[boolRuralPaymentsOpen]" DisplayName="Rural Payments Open?" sap:VirtualizedContainerService.HintSize="813,312" sap2010:WorkflowViewState.IdRef="If_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'Rural Payments'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="8604d1919b6d46d9e32078e874aecbbb" Selector="&lt;html app='msedge.exe' title='Home - Rural Payments' /&gt;" UiBrowser="[OUT_browserRP]">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </If.Then>
+            <If.Else>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Applications\Open RP.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="IN_dictConfig">
+                    <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="inout_Config" />
+                  </InArgument>
+                  <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserRP">
+                    <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="OUT_browserRP" />
+                  </OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </If.Else>
+          </If>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="859,22" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <r:Generic_PopUp OUT_ProcessType="{x:Null}" DisplayName="User Assistance Form" sap:VirtualizedContainerService.HintSize="200,22" IN_CSS_filepath="[&quot;/file://&quot; + Directory.GetCurrentDirectory + &quot;\Assets\Generic\InitialisationException.css&quot;]" IN_ErrorMessage="The stop button was pressed" IN_PopupMessage="&lt;h1&gt;User assistance required&lt;/h1&gt;&lt;P&gt; I've encountered a problem initialising Rural Payments in Edge.&lt;/P&gt;&lt;P&gt; Please ensure the application is open then click Continue.&lt;/P&gt;&lt;BR&gt;" IN_PopupTitle="Department for Environment, Food and Rural Affairs" IN_WidthHeight="[{500,300}]" sap2010:WorkflowViewState.IdRef="Generic_PopUp_2" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
