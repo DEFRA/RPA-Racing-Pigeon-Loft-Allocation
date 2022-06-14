@@ -60,7 +60,6 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Open_RP" sap:VirtualizedContainerService.HintSize="876,1136" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -89,7 +88,7 @@
           <av:Point x:Key="ShapeLocation">265,348.5</av:Point>
           <av:Size x:Key="ShapeSize">70,87</av:Size>
           <av:PointCollection x:Key="TrueConnector">265,392 235,392 235,1029.52 280,1029.52</av:PointCollection>
-          <av:PointCollection x:Key="FalseConnector">335,392 490,392 490,443</av:PointCollection>
+          <av:PointCollection x:Key="FalseConnector">335,392 490,392 490,463</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <FlowDecision.True>
@@ -113,12 +112,12 @@
         <FlowStep x:Name="__ReferenceID9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">390,443</av:Point>
+              <av:Point x:Key="ShapeLocation">390,463</av:Point>
               <av:Size x:Key="ShapeSize">200,22</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">490,465 490,575</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">490,485 490,575</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ro:Check_For_Sign_In_Screen DisplayName="Check For Sign In Screen" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[OUT_browserRP]" IN_intTimeout="10000" sap2010:WorkflowViewState.IdRef="Check_For_Sign_In_Screen_1" OUT_boolSignInButton="[boolOpenedRP]">
+          <ro:Check_For_Sign_In_Screen DisplayName="Check For Sign In Screen" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[OUT_browserRP]" IN_intTimeout="5000" sap2010:WorkflowViewState.IdRef="Check_For_Sign_In_Screen_1" OUT_boolSignInButton="[boolOpenedRP]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
