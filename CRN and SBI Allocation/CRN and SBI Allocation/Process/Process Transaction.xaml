@@ -184,69 +184,27 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Read PDF Form" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Read PDF Form.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strTitle">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strTitle" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFirstName">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFirstName" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLastName">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strLastName" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessName">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strBusinessName" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strSBI" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessAddress">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strBusinessAddress" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcode">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strPostcode" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPhoneNumber">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strPhoneNumber" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strVoicemail">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strVoicemail" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strEmailAddress">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strEmailAddress" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLegalStatus">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strLegalStatus" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCharityNumber">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCharityNumber" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCompaniesHouseNumber">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCompaniesHouseNumber" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessType">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strBusinessType" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strAddressOfLoft">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strAddressOfLoft" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strXCoord">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strX" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcodeOfLoft">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strPostcodeOfLoft" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strYCoord">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strY" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFormOfTenure">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFormOfTenure" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strNumberType">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strNumberType" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="s:String[]" x:Key="OUT_arrAddressLines">
-                    <mva:VisualBasicReference x:TypeArguments="s:String[]" ExpressionText="arrAddressLines" />
-                  </OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strTitle">[strTitle]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFirstName">[strFirstName]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLastName">[strLastName]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessName">[strBusinessName]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">[strSBI]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessAddress">[strBusinessAddress]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcode">[strPostcode]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPhoneNumber">[strPhoneNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strVoicemail">[strVoicemail]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strEmailAddress">[strEmailAddress]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLegalStatus">[strLegalStatus]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCharityNumber">[strCharityNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCompaniesHouseNumber">[strCompaniesHouseNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessType">[strBusinessType]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strAddressOfLoft">[strAddressOfLoft]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strXCoord">[strX]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcodeOfLoft">[strPostcodeOfLoft]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strYCoord">[strY]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFormOfTenure">[strFormOfTenure]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strNumberType">[strNumberType]</OutArgument>
+                  <OutArgument x:TypeArguments="s:String[]" x:Key="OUT_arrAddressLines">[arrAddressLines]</OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -263,7 +221,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">300,481.5 300,530.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Customer" sap:VirtualizedContainerService.HintSize="377,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Customer.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Customer" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Customer.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">
                         <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserRP" />
@@ -295,6 +253,9 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCRN">
                         <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="OUT_strCRN" />
                       </OutArgument>
+                      <InArgument x:TypeArguments="s:String[]" x:Key="IN_arrAddressLines">
+                        <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="arrAddressLines" />
+                      </InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -311,19 +272,44 @@
                           <av:PointCollection x:Key="ConnectorLocation">300,582.5 300,631.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Business" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Business.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Business" sap:VirtualizedContainerService.HintSize="370,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Business.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[IN_browserRP]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">[OUT_strCRN]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strBusinessName">[strBusinessName]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">[strEmailAddress]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strNumber">[strPhoneNumber]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strNumberType">[strNumberType]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strLegalStatus">[strLegalStatus]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strTypeOfBusiness">[strBusinessType]</InArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">[strSBI]</OutArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">[strAddressOfLoft]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strPostcode">[strPostcode]</InArgument>
+                          <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">
+                            <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserRP" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="OUT_strCRN" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strBusinessName">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBusinessName" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strEmailAddress" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strNumber">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strPhoneNumber" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strNumberType">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strNumberType" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strLegalStatus">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strLegalStatus" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strTypeOfBusiness">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBusinessType" />
+                          </InArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">
+                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strSBI" />
+                          </OutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strAddressOfLoft" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strPostcode">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strPostcode" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="s:String[]" x:Key="IN_arrAddressLines">
+                            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="arrAddressLines" />
+                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -342,18 +328,10 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Add Internal Note &amp; Edit Case Title" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Add Internal Note &amp; Edit Title.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">
-                                <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserCRM" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="OUT_strCRN" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strSBI">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strSBI" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strEmailAddress" />
-                              </InArgument>
+                              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[IN_browserCRM]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">[OUT_strCRN]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strSBI">[strSBI]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">[strEmailAddress]</InArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -362,10 +340,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:InvokeWorkflowFile>
                           <FlowStep.Next>
-                            <FlowDecision x:Name="__ReferenceID10" DisplayName="Breakpoint 1?" sap:VirtualizedContainerService.HintSize="77,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-                              <FlowDecision.Condition>
-                                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;TRUE&quot; OR inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;true&quot;" />
-                              </FlowDecision.Condition>
+                            <FlowDecision x:Name="__ReferenceID10" Condition="[inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;TRUE&quot; OR inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;true&quot;]" DisplayName="Breakpoint 1?" sap:VirtualizedContainerService.HintSize="77,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -387,11 +362,7 @@
                                   <Flowchart sap2010:Annotation.AnnotationText="A title and message is passed into the workflow. The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Breakpoint 1" sap:VirtualizedContainerService.HintSize="200,198" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                                     <Flowchart.Variables>
                                       <Variable x:TypeArguments="x:String" Name="strButton" />
-                                      <Variable x:TypeArguments="x:String" Name="IN_PopupMessage">
-                                        <Variable.Default>
-                                          <Literal x:TypeArguments="x:String">&lt;P&gt;The robot has completed all actions to pausepoint 1&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Please check the following steps have been completed successfully against the form attached to the email.&lt;/P&gt;&lt;P&gt;1. The CRN was created successfully using the correct information.&lt;BR&gt;2. The SBI was created successfully using the correct information.&lt;BR&gt;3. An Internal Note was added to the case with the CRN and SBI details.&lt;BR&gt;4. The Case Title was updated to include the CRN, SBI and date allocated on.&lt;/P&gt;&lt;P&gt;Once you have checked these actions were performed successfully, press continue on the pop up.&lt;/P&gt;&lt;BR&gt;</Literal>
-                                        </Variable.Default>
-                                      </Variable>
+                                      <Variable x:TypeArguments="x:String" Default="&lt;P&gt;The robot has completed all actions to pausepoint 1&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Please check the following steps have been completed successfully against the form attached to the email.&lt;/P&gt;&lt;P&gt;1. The CRN was created successfully using the correct information.&lt;BR&gt;2. The SBI was created successfully using the correct information.&lt;BR&gt;3. An Internal Note was added to the case with the CRN and SBI details.&lt;BR&gt;4. The Case Title was updated to include the CRN, SBI and date allocated on.&lt;/P&gt;&lt;P&gt;Once you have checked these actions were performed successfully, press continue on the pop up.&lt;/P&gt;&lt;BR&gt;" Name="IN_PopupMessage" />
                                     </Flowchart.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -460,9 +431,7 @@
                                           </ActivityAction>
                                         </ufa:FormActivity.DelayBody>
                                         <ufa:FormActivity.FormFieldsCollection>
-                                          <InArgument x:TypeArguments="x:String" x:Key="PopupMessage">
-                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="IN_PopupMessage" />
-                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="PopupMessage">[IN_PopupMessage]</InArgument>
                                           <OutArgument x:TypeArguments="x:String" x:Key="processType" />
                                         </ufa:FormActivity.FormFieldsCollection>
                                         <sap:WorkflowViewStateService.ViewState>
