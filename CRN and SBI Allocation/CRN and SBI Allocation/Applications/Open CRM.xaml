@@ -69,7 +69,6 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Open_CRM" sap:VirtualizedContainerService.HintSize="760,1196" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -230,10 +229,7 @@
         <x:Reference>__ReferenceID5</x:Reference>
       </FlowStep.Next>
     </FlowStep>
-    <FlowDecision x:Name="__ReferenceID9" DisplayName="Log In Page?" sap:VirtualizedContainerService.HintSize="73,87" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
-      <FlowDecision.Condition>
-        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="boolLogInPageExists.ToString.ToLower = &quot;true&quot;" />
-      </FlowDecision.Condition>
+    <FlowDecision x:Name="__ReferenceID9" Condition="[boolLogInPageExists.ToString.ToLower = &quot;true&quot;]" DisplayName="Log In Page?" sap:VirtualizedContainerService.HintSize="73,87" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">313.5,626.5</av:Point>
@@ -254,11 +250,7 @@
           <Flowchart sap2010:Annotation.AnnotationText="The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Prompt User to Log In" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Flowchart_2">
             <Flowchart.Variables>
               <Variable x:TypeArguments="x:String" Name="strButton" />
-              <Variable x:TypeArguments="x:String" Name="IN_PopupMessage">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">&lt;P&gt;Please can you log into CRM.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Once CRM is on the home screen, press Continue.&lt;/P&gt;&lt;BR&gt;</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="&lt;P&gt;Please can you log into CRM.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Once CRM is on the home screen, press Continue.&lt;/P&gt;&lt;BR&gt;" Name="IN_PopupMessage" />
             </Flowchart.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -327,9 +319,7 @@
                   </ActivityAction>
                 </ufa:FormActivity.DelayBody>
                 <ufa:FormActivity.FormFieldsCollection>
-                  <InArgument x:TypeArguments="x:String" x:Key="PopupMessage">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="IN_PopupMessage" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="PopupMessage">[IN_PopupMessage]</InArgument>
                   <OutArgument x:TypeArguments="x:String" x:Key="processType" />
                 </ufa:FormActivity.FormFieldsCollection>
                 <sap:WorkflowViewStateService.ViewState>
@@ -376,7 +366,7 @@
               <av:PointCollection x:Key="ConnectorLocation">340,236 340,279.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" ApplicationWindow="[windowCRM]" ContinueOnError="True" DisplayName="Attach Window CRM" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="8ee336c06459b577e995e9ddd47b4b3d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='My Dashboard - Dynamics 365*' /&gt;&#xA;">
+          <ui:WindowScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" ApplicationWindow="[windowCRM]" ContinueOnError="True" DisplayName="Attach Window CRM" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="ee2fc58ae257266f3403d0a19021d1ae" Selector="&lt;wnd app='msedge.exe' title='My Dashboard - Dynamics 365*Microsoft​ Edge' /&gt;&#xD;&#xA;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -400,7 +390,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">340,345.5 340,387.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Check Signed In" sap:VirtualizedContainerService.HintSize="272,215" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Check Signed In" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -42,7 +42,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>677,1355</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>673,1355</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Create_A_Customer_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -96,7 +96,6 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
@@ -142,7 +141,7 @@
               <av:PointCollection x:Key="ConnectorLocation">300,271.5 300,311.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <rc:Check_On_Complete_Personal_Details_Page DisplayName="Check On Complete Personal Details Page" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" IN_intTimeout="30000" sap2010:WorkflowViewState.IdRef="Check_On_Complete_Personal_Details_Page_1" OUT_boolPageLoaded="[boolPageLoaded]">
+          <rc:Check_On_Complete_Personal_Details_Page DisplayName="Check On Complete Personal Details Page" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" IN_intTimeout="10000" sap2010:WorkflowViewState.IdRef="Check_On_Complete_Personal_Details_Page_1" OUT_boolPageLoaded="[boolPageLoaded]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,10 +208,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </rc:Enter_Name>
                           <FlowStep.Next>
-                            <FlowDecision x:Name="__ReferenceID14" DisplayName="Address Lines?" sap:VirtualizedContainerService.HintSize="83,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-                              <FlowDecision.Condition>
-                                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="IN_arrAddressLines IsNot Nothing" />
-                              </FlowDecision.Condition>
+                            <FlowDecision x:Name="__ReferenceID14" Condition="[IN_arrAddressLines IsNot Nothing]" DisplayName="Address Lines?" sap:VirtualizedContainerService.HintSize="83,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

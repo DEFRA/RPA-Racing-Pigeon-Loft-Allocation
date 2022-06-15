@@ -11,7 +11,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>682,1059</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>673,1084</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Add_Internal_Note___Edit_Title_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -222,7 +222,7 @@
               <av:Size x:Key="ShapeSize">200,66</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Edit Case Title" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Edit Case Title" sap:VirtualizedContainerService.HintSize="526,515" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolCreateTimelineExists" />
               <Variable x:TypeArguments="x:Boolean" Name="boolPageLoaded" />
@@ -254,7 +254,7 @@
                 </Throw>
               </If.Else>
             </If>
-            <c:Edit_Case_Title DisplayName="Edit Case Title" sap:VirtualizedContainerService.HintSize="484,22" IN_browserCRM="[IN_browserCRM]" IN_strUpdatedCaseTitle="[&quot;CRN: &quot; + IN_strCRN + &quot; SBI: &quot; + IN_strSBI + &quot; &quot; + DateTime.Now.ToString(&quot;dd.MM.yy&quot;) + &quot; &quot; + strCaseTitle]" sap2010:WorkflowViewState.IdRef="Edit_Case_Title_1" OUT_strCaseTitle="[strCaseTitle]" />
+            <c:Edit_Case_Title DisplayName="Edit Case Title" sap:VirtualizedContainerService.HintSize="484,22" IN_browserCRM="[IN_browserCRM]" IN_strUpdatedCaseTitle="[&quot; SBI: &quot; + IN_strSBI + &quot;CRN: &quot; + IN_strCRN + &quot; &quot; + DateTime.Now.ToString(&quot;dd.MM.yy&quot;) + &quot; Pigeon Loft Standard &quot; + strCaseTitle]" sap2010:WorkflowViewState.IdRef="Edit_Case_Title_1" OUT_strCaseTitle="[strCaseTitle]" />
             <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
