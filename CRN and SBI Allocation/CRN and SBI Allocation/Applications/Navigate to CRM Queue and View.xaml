@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>677,701</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>673,701</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Navigate_to_CRM_Queue_and_View_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -62,7 +62,6 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Navigate_to_CRM_Queue_and_View" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -149,7 +148,7 @@
               <Variable x:TypeArguments="x:String" Name="strButton" />
               <Variable x:TypeArguments="x:String" Name="IN_PopupMessage">
                 <Variable.Default>
-                  <Literal x:TypeArguments="x:String">&lt;P&gt;Please select the view 'Pigeon Loft Emails' and pick the cases you would like to process.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Once you have picked the cases you would like to process, please then change the view to 'Items I am working on', then press Continue.&lt;/P&gt;&lt;BR&gt;</Literal>
+                  <Literal x:TypeArguments="x:String">&lt;P&gt;Please select the view 'Pigeon Loft Emails' and pick the cases you would like to process.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Once you have picked the cases you would like to process, please then change the view to 'Emails I am working on', then press Continue.&lt;/P&gt;&lt;BR&gt;</Literal>
                 </Variable.Default>
               </Variable>
             </Flowchart.Variables>
@@ -220,9 +219,7 @@
                   </ActivityAction>
                 </ufa:FormActivity.DelayBody>
                 <ufa:FormActivity.FormFieldsCollection>
-                  <InArgument x:TypeArguments="x:String" x:Key="PopupMessage">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="IN_PopupMessage" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="PopupMessage">[IN_PopupMessage]</InArgument>
                   <OutArgument x:TypeArguments="x:String" x:Key="processType" />
                 </ufa:FormActivity.FormFieldsCollection>
                 <sap:WorkflowViewStateService.ViewState>

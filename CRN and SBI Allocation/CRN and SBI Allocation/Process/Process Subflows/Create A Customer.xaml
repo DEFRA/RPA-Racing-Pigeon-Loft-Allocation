@@ -97,9 +97,10 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="Create_A_Customer" sap:VirtualizedContainerService.HintSize="644,1290" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Create_A_Customer" sap:VirtualizedContainerService.HintSize="644,1322" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="boolPageLoaded" />
       <Variable x:TypeArguments="x:String" Name="strCRNOutput" />
@@ -110,7 +111,7 @@
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,117.5</av:PointCollection>
-        <x:Double x:Key="Height">1254</x:Double>
+        <x:Double x:Key="Height">1286.5</x:Double>
         <x:Double x:Key="Width">609.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -414,24 +415,50 @@
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <av:Point x:Key="ShapeLocation">200,983.5</av:Point>
-                                                      <av:Size x:Key="ShapeSize">200,22</av:Size>
-                                                      <av:PointCollection x:Key="ConnectorLocation">300,1005.5 300,1045.5</av:PointCollection>
+                                                      <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                      <av:PointCollection x:Key="ConnectorLocation">300,1034.5 300,1065.5</av:PointCollection>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <rc:Get_CRN DisplayName="Get CRN" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" sap2010:WorkflowViewState.IdRef="Get_CRN_1" OUT_strCRNOutput="[strCRNOutput]">
-                                                    <sap:WorkflowViewStateService.ViewState>
-                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                      </scg:Dictionary>
-                                                    </sap:WorkflowViewStateService.ViewState>
-                                                  </rc:Get_CRN>
+                                                  <TryCatch DisplayName="Try Get CRN" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                    <TryCatch.Try>
+                                                      <rc:Get_CRN DisplayName="Get CRN" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" sap2010:WorkflowViewState.IdRef="Get_CRN_1" OUT_strCRNOutput="[strCRNOutput]">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </rc:Get_CRN>
+                                                    </TryCatch.Try>
+                                                    <TryCatch.Catches>
+                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,104" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ActivityAction x:TypeArguments="s:Exception">
+                                                          <ActivityAction.Argument>
+                                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                          </ActivityAction.Argument>
+                                                          <Throw DisplayName="Throw Business Exception" Exception="[new BusinessRuleException(&quot;Cannot get CRN - email may already be attached to another customer record&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_2">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </Throw>
+                                                        </ActivityAction>
+                                                      </Catch>
+                                                    </TryCatch.Catches>
+                                                  </TryCatch>
                                                   <FlowStep.Next>
                                                     <FlowStep x:Name="__ReferenceID13">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <av:Point x:Key="ShapeLocation">200,1045.5</av:Point>
+                                                          <av:Point x:Key="ShapeLocation">200,1065.5</av:Point>
                                                           <av:Size x:Key="ShapeSize">200,66</av:Size>
-                                                          <av:PointCollection x:Key="ConnectorLocation">300,1111.5 300,1145.5</av:PointCollection>
+                                                          <av:PointCollection x:Key="ConnectorLocation">300,1131.5 300,1165.5</av:PointCollection>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                       <Sequence DisplayName="Assign CRN" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
@@ -480,7 +507,7 @@
                                                         <FlowStep x:Name="__ReferenceID10">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <av:Point x:Key="ShapeLocation">200,1145.5</av:Point>
+                                                              <av:Point x:Key="ShapeLocation">200,1165.5</av:Point>
                                                               <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
@@ -698,7 +725,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,169.5 300,197.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" DisplayName="Activate RP Screen" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_3">
+      <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" DisplayName="Activate RP Screen" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_3">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>

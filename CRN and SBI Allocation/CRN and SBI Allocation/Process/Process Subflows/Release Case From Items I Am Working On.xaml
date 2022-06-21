@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>694,701</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>673,766</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Release_Case_From_Items_I_Am_Working_On_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -36,7 +36,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -53,6 +53,7 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Release_Case_From_Items_I_Am_Working_On" sap:VirtualizedContainerService.HintSize="634,701" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -180,7 +181,7 @@
                               <av:PointCollection x:Key="ConnectorLocation">320,270.5 320,320.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Release Item Back To Queue" sap:VirtualizedContainerService.HintSize="434,510" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
+                          <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Release Item Back To Queue" sap:VirtualizedContainerService.HintSize="434,490" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
                             <ui:BrowserScope.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
@@ -204,7 +205,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75eb82ef-02f4-42fc-9341-0d06392b4304" InformativeScreenshot="73177cc99a709beb9eb0f910423b3d12" Selector="&lt;html app='msedge.exe' title='Queue Items Items I am working on - Dynamics 365' /&gt;&#xD;&#xA;&lt;webctrl aaname='Release' tag='SPAN' /&gt;&#xD;&#xA;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75eb82ef-02f4-42fc-9341-0d06392b4304" InformativeScreenshot="73177cc99a709beb9eb0f910423b3d12" Selector="&lt;webctrl aaname='Release' tag='SPAN' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -226,7 +227,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75eb82ef-02f4-42fc-9341-0d06392b4304" InformativeScreenshot="e7057ae15dde83f1426ae385070973ab" Selector="&lt;html app='msedge.exe' title='Queue Items Items I am working on - Dynamics 365' /&gt;&#xD;&#xA;&lt;webctrl tag='BUTTON' aaname='Release' /&gt;&#xD;&#xA;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75eb82ef-02f4-42fc-9341-0d06392b4304" InformativeScreenshot="e7057ae15dde83f1426ae385070973ab" Selector="&lt;webctrl tag='BUTTON' aaname='Release' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>

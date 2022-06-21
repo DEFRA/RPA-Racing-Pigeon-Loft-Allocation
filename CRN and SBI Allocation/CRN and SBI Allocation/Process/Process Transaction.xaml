@@ -17,7 +17,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>673,1445</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>673,1718</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -97,7 +97,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " sap:VirtualizedContainerService.HintSize="634,1657" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " sap:VirtualizedContainerService.HintSize="634,1653" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="strTitle" />
       <Variable x:TypeArguments="x:String" Name="strFirstName" />
@@ -140,11 +140,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,126.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">300,178.5 300,227.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Get Case From CRM" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Get Case From CRM.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Get Case From CRM" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Get Case From CRM.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="IN_dictConfig">[inout_Config]</InArgument>
           <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[IN_browserCRM]</InArgument>
@@ -160,15 +160,13 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,227.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,52</av:Size>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">300,279.5 300,328.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Navigate To Internal Note with Application" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Navigate To Internal Note with Application.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Navigate To Internal Note with Application" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Navigate To Internal Note with Application.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">
-                <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserCRM" />
-              </InArgument>
+              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[IN_browserCRM]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -181,11 +179,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">200,328.5</av:Point>
-                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                  <av:Size x:Key="ShapeSize">200,51</av:Size>
                   <av:PointCollection x:Key="ConnectorLocation">300,380.5 300,430.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Read PDF Form" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Read PDF Form.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Read PDF Form" sap:VirtualizedContainerService.HintSize="358,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Read PDF Form.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <OutArgument x:TypeArguments="x:String" x:Key="OUT_strTitle">
                     <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strTitle" />
@@ -253,6 +251,12 @@
                   <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserPDFTab">
                     <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="browserPDFTab" />
                   </OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="IN_AdobeFilePath">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="inout_Config(&quot;AdobeFilePath&quot;).ToString" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="IN_CurrentPDFFilePath">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="inout_Config(&quot;CurrentPDFFilePath&quot;).ToString" />
+                  </InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -261,10 +265,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
               <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID11" DisplayName="SBI Given?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
-                  <FlowDecision.Condition>
-                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="strSBI IsNot Nothing" />
-                  </FlowDecision.Condition>
+                <FlowDecision x:Name="__ReferenceID11" Condition="[strSBI IsNot Nothing]" DisplayName="SBI Given?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -279,18 +280,14 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">50,518</av:Point>
-                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                          <av:Size x:Key="ShapeSize">200,51</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">150,570 150,600 300,600 300,659.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Search For SBI" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Search For SBI.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Search For SBI" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Search For SBI.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">
-                            <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserRP" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strSBI">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strSBI" />
-                          </InArgument>
+                          <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[IN_browserRP]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strSBI">[strSBI]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -303,11 +300,11 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">200,659.5</av:Point>
-                              <av:Size x:Key="ShapeSize">200,52</av:Size>
+                              <av:Size x:Key="ShapeSize">200,51</av:Size>
                               <av:PointCollection x:Key="ConnectorLocation">300,711.5 300,760.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Customer" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Customer.xaml">
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Customer" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Customer.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
                               <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[IN_browserRP]</InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="IN_strTitle">[strTitle]</InArgument>
@@ -332,11 +329,11 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">200,760.5</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                  <av:Size x:Key="ShapeSize">200,51</av:Size>
                                   <av:PointCollection x:Key="ConnectorLocation">300,812.5 300,861.5</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Business" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Business.xaml">
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Business" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Business.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
                                   <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[IN_browserRP]</InArgument>
                                   <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">[OUT_strCRN]</InArgument>
@@ -362,11 +359,11 @@
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <av:Point x:Key="ShapeLocation">200,861.5</av:Point>
-                                      <av:Size x:Key="ShapeSize">200,52</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">200,887.5 180,887.5 180,1072.5 300,1072.5 300,1102.5</av:PointCollection>
+                                      <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                      <av:PointCollection x:Key="ConnectorLocation">200,887 180,887 180,1072.5 300,1072.5 300,1102.5</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Add Internal Note &amp; Edit Case Title" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Add Internal Note &amp; Edit Title.xaml">
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Add Internal Note &amp; Edit Case Title" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Add Internal Note &amp; Edit Title.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
                                       <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[IN_browserCRM]</InArgument>
                                       <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">[OUT_strCRN]</InArgument>
@@ -384,11 +381,11 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">200,1102.5</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,208</av:Size>
-                                          <av:PointCollection x:Key="ConnectorLocation">300,1310.5 300,1350.5</av:PointCollection>
+                                          <av:Size x:Key="ShapeSize">200,198</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">300,1300.5 300,1350.5</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Flowchart sap2010:Annotation.AnnotationText="A title and message is passed into the workflow. The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Breakpoint 1" sap:VirtualizedContainerService.HintSize="200,208" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+                                      <Flowchart sap2010:Annotation.AnnotationText="A title and message is passed into the workflow. The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Breakpoint 1" sap:VirtualizedContainerService.HintSize="200,198" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                                         <Flowchart.Variables>
                                           <Variable x:TypeArguments="x:String" Name="strButton" />
                                           <Variable x:TypeArguments="x:String" Default="&lt;P&gt;The robot has completed all actions to pausepoint 1&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Please check the following steps have been completed successfully against the form attached to the email.&lt;/P&gt;&lt;P&gt;1. The CRN was created successfully using the correct information.&lt;BR&gt;2. The SBI was created successfully using the correct information.&lt;BR&gt;3. An Internal Note was added to the case with the CRN and SBI details.&lt;BR&gt;4. The Case Title was updated to include the CRN, SBI and date allocated on.&lt;/P&gt;&lt;P&gt;Once you have checked these actions were performed successfully, press continue on the pop up.&lt;/P&gt;&lt;BR&gt;" Name="IN_PopupMessage" />
@@ -479,11 +476,11 @@
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <av:Point x:Key="ShapeLocation">200,1350.5</av:Point>
-                                              <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                              <av:Size x:Key="ShapeSize">200,51</av:Size>
                                               <av:PointCollection x:Key="ConnectorLocation">300,1402.5 300,1451.5</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[browserPDFTab]" DisplayName="Close PDF Tab" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
+                                          <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[browserPDFTab]" DisplayName="Close PDF Tab" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
                                             <ui:BrowserScope.Body>
                                               <ActivityAction x:TypeArguments="x:Object">
                                                 <ActivityAction.Argument>
@@ -503,10 +500,10 @@
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <av:Point x:Key="ShapeLocation">200,1451.5</av:Point>
-                                                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                  <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Release Case From Items I Am Working On" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Release Case From Items I Am Working On.xaml">
+                                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Release Case From Items I Am Working On" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Release Case From Items I Am Working On.xaml">
                                                 <ui:InvokeWorkflowFile.Arguments>
                                                   <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[IN_browserCRM]</InArgument>
                                                 </ui:InvokeWorkflowFile.Arguments>
@@ -547,12 +544,12 @@
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
     <x:Reference>__ReferenceID9</x:Reference>
-    <FlowDecision Condition="[inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;TRUE&quot; OR inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;true&quot;]" DisplayName="Breakpoint 1?" sap:VirtualizedContainerService.HintSize="78,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+    <FlowDecision Condition="[inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;TRUE&quot; OR inout_Config(&quot;boolPausePoint1&quot;).ToString = &quot;true&quot;]" DisplayName="Breakpoint 1?" sap:VirtualizedContainerService.HintSize="77,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <av:Point x:Key="ShapeLocation">261.5,962.5</av:Point>
-          <av:Size x:Key="ShapeSize">78,87</av:Size>
+          <av:Size x:Key="ShapeSize">77,87</av:Size>
           <av:PointCollection x:Key="FalseConnector">339.5,1006 430,1006 430,1376.5 400,1376.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>

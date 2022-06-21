@@ -46,7 +46,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>677,996</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>673,996</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Create_A_Business_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -75,7 +75,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="25">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -277,7 +277,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">300,526.5 300,581.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Flowchart DisplayName="Enter Business Details" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+                  <Flowchart DisplayName="Enter Business Details" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -318,7 +318,7 @@
                                   <av:PointCollection x:Key="ConnectorLocation">130,325.5 130,355.5 300,355.5 300,399</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" DisplayName="Input Each Address Line &amp; Postcode" sap:VirtualizedContainerService.HintSize="434,957" sap2010:WorkflowViewState.IdRef="BrowserScope_8" InformativeScreenshot="ec9c659e9c7c19f97d432f938023ae17">
+                              <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" DisplayName="Input Each Address Line &amp; Postcode" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_8" InformativeScreenshot="ec9c659e9c7c19f97d432f938023ae17">
                                 <ui:BrowserScope.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
@@ -765,24 +765,31 @@
                               <av:PointCollection x:Key="ConnectorLocation">300,763.5 300,813.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Confirm Details &amp; Get SBI Number" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Confirm Details &amp; Get SBI Number" sap:VirtualizedContainerService.HintSize="284,633" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="strBusinessNameReturned" />
+                              <Variable x:TypeArguments="x:Boolean" Name="boolDuplicate" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence DisplayName="Confirm Details" sap:VirtualizedContainerService.HintSize="721,368" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <Sequence DisplayName="Confirm Details" sap:VirtualizedContainerService.HintSize="242,205" sap2010:WorkflowViewState.IdRef="Sequence_10">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <rg:Get_Business_Name DisplayName="Get Business Name" sap:VirtualizedContainerService.HintSize="484,22" IN_browserRP="[IN_browserRP]" sap2010:WorkflowViewState.IdRef="Get_Business_Name_1" OUT_strBusinessName="[strBusinessNameReturned]" />
-                              <If Condition="[strBusinessNameReturned = IN_strBusinessName]" DisplayName="If strBusinessNameReturned = IN_strBusinessName" sap:VirtualizedContainerService.HintSize="484,214" sap2010:WorkflowViewState.IdRef="If_5">
+                              <rg:Get_Business_Name DisplayName="Get Business Name" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" sap2010:WorkflowViewState.IdRef="Get_Business_Name_1" OUT_strBusinessName="[strBusinessNameReturned]" />
+                              <If Condition="[strBusinessNameReturned = IN_strBusinessName]" DisplayName="If strBusinessNameReturned = IN_strBusinessName" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
                                   <Sequence DisplayName="Click_I_Confirm_These_Details_Are_Correct_Button" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -835,7 +842,64 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get SBI" sap:VirtualizedContainerService.HintSize="721,846" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" DisplayName="Check For Duplicate Pop Up" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="BrowserScope_10">
+                              <ui:BrowserScope.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                  </ActivityAction.Argument>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="526,491" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:UiElementExists DisplayName="Element 'Duplicate Found' Exists" Exists="[boolDuplicate]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                      <ui:UiElementExists.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4bdec6de-8f40-45fa-8dca-50313661b2a6" InformativeScreenshot="765ccb365331bf04130d007b6f54881d" Selector="&lt;html app='msedge.exe' title='Add business details - Rural Payments' /&gt;&#xD;&#xA;&lt;webctrl tag='H1' aaname='Duplicate found' /&gt;&#xD;&#xA;" TimeoutMS="10000">
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:UiElementExists.Target>
+                                    </ui:UiElementExists>
+                                    <If Condition="[boolDuplicate]" DisplayName="If duplicate pop up is shown" sap:VirtualizedContainerService.HintSize="484,253" sap2010:WorkflowViewState.IdRef="If_9">
+                                      <If.Then>
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Confirm Changes" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="70baf371-a325-40e2-b29c-d6527690d5a3" InformativeScreenshot="a4c8860247d148c53b13285dc938aa05" Selector="&lt;html app='msedge.exe' title='Add business details - Rural Payments' /&gt;&#xD;&#xA;&lt;webctrl aaname='Confirm changes*' tag='BUTTON' /&gt;&#xD;&#xA;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                      </If.Then>
+                                    </If>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:BrowserScope.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:BrowserScope>
+                            <Sequence DisplayName="Get SBI" sap:VirtualizedContainerService.HintSize="242,205" sap2010:WorkflowViewState.IdRef="Sequence_11">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="strSBIOutput" />
                               </Sequence.Variables>
@@ -845,8 +909,14 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <rc:Check_For_Customer_Business_and_Messages_Screen DisplayName="Check For Customer Business and Messages Screen" sap:VirtualizedContainerService.HintSize="679,22" IN_browserRP="[IN_browserRP]" IN_intTimeout="30000" sap2010:WorkflowViewState.IdRef="Check_For_Customer_Business_and_Messages_Screen_2" OUT_boolScreenOpen="[boolScreenOpen]" />
-                              <If Condition="[boolScreenOpen = True]" DisplayName="If boolScreenOpen is True" sap:VirtualizedContainerService.HintSize="679,692" sap2010:WorkflowViewState.IdRef="If_6">
+                              <rc:Check_For_Customer_Business_and_Messages_Screen DisplayName="Check For Customer Business and Messages Screen" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" IN_intTimeout="30000" sap2010:WorkflowViewState.IdRef="Check_For_Customer_Business_and_Messages_Screen_2" OUT_boolScreenOpen="[boolScreenOpen]" />
+                              <If Condition="[boolScreenOpen = True]" DisplayName="If boolScreenOpen is True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
                                   <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" DisplayName="Get SBI" sap:VirtualizedContainerService.HintSize="434,544" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="2e4b3e812465c11f2109dfaae8188608">
                                     <ui:BrowserScope.Body>

@@ -65,7 +65,6 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Add_Internal_Note___Edit_Title" sap:VirtualizedContainerService.HintSize="634,1019" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -78,7 +77,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,117.5</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,114.5</av:PointCollection>
         <x:Double x:Key="Height">983</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -254,7 +253,7 @@
                 </Throw>
               </If.Else>
             </If>
-            <c:Edit_Case_Title DisplayName="Edit Case Title" sap:VirtualizedContainerService.HintSize="484,22" IN_browserCRM="[IN_browserCRM]" IN_strUpdatedCaseTitle="[&quot; SBI: &quot; + IN_strSBI + &quot;CRN: &quot; + IN_strCRN + &quot; &quot; + DateTime.Now.ToString(&quot;dd.MM.yy&quot;) + &quot; Pigeon Loft Standard &quot; + strCaseTitle]" sap2010:WorkflowViewState.IdRef="Edit_Case_Title_1" OUT_strCaseTitle="[strCaseTitle]" />
+            <c:Edit_Case_Title DisplayName="Edit Case Title" sap:VirtualizedContainerService.HintSize="484,22" IN_browserCRM="[IN_browserCRM]" IN_strUpdatedCaseTitle="[&quot;SBI: &quot; + IN_strSBI + &quot; &quot; + DateTime.Now.ToString(&quot;dd/MM&quot;) + &quot; Pigeon Loft - CRN: &quot; + IN_strCRN + &quot; Standard &quot; + strCaseTitle]" sap2010:WorkflowViewState.IdRef="Edit_Case_Title_1" OUT_strCaseTitle="[strCaseTitle]" />
             <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
@@ -477,9 +476,9 @@
     <FlowStep x:Name="__ReferenceID10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,117.5</av:Point>
+          <av:Point x:Key="ShapeLocation">200,114.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,169.5 300,207.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,165.5 300,207.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Activate CRM" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
@@ -490,7 +489,7 @@
             </ActivityAction.Argument>
             <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate CRM Screen" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Activate_2">
               <ui:Activate.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e04aeeec-e879-44db-8177-b3ed7d7f1593" InformativeScreenshot="385227bcb9650d1eb6ae5a8be08ae5e6" Selector="&lt;webctrl tag='LI' aaname='EMAIL - Inbound' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e04aeeec-e879-44db-8177-b3ed7d7f1593" InformativeScreenshot="8c1e6fb7bc705341fe17ab7942c5bb0e" Selector="&lt;webctrl aaname='Home' tag='SPAN' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
