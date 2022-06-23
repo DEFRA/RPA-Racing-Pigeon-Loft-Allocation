@@ -60,6 +60,7 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Open_RP" sap:VirtualizedContainerService.HintSize="876,1136" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -315,7 +316,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,146.5 300,196.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ro:Open_Rural_Payments DisplayName="Open Rural Payments" sap:VirtualizedContainerService.HintSize="200,22" IN_strURL="[IN_dictConfig(&quot;RPLogInUrl&quot;).ToString]" sap2010:WorkflowViewState.IdRef="Open_Rural_Payments_1" OUT_browserRP="[OUT_browserRP]">
+      <ro:Open_Rural_Payments DisplayName="Open Rural Payments" sap:VirtualizedContainerService.HintSize="200,22" IN_strURL="[IN_dictConfig(&quot;RPHomeUrl&quot;).ToString]" sap2010:WorkflowViewState.IdRef="Open_Rural_Payments_1" OUT_browserRP="[OUT_browserRP]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -355,7 +356,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">300,308.5 300,348.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ro:Check_Logged_In DisplayName="Check Logged In" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[OUT_browserRP]" IN_intTimeout="10000" sap2010:WorkflowViewState.IdRef="Check_Logged_In_1" OUT_boolSearchLink="[boolLoggedIn]">
+              <ro:Check_Logged_In DisplayName="Check Logged In" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[OUT_browserRP]" IN_intTimeout="5000" sap2010:WorkflowViewState.IdRef="Check_Logged_In_1" OUT_boolSearchLink="[boolLoggedIn]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
