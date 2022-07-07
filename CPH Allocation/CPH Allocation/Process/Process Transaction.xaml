@@ -248,16 +248,35 @@
                           <av:PointCollection x:Key="ConnectorLocation">300,580.5 300,631.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Siti Agri" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Siti Agri Components.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Siti Agri" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Siti Agri Components.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="inout_Config">[inout_Config]</InOutArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strCRMCaseNumber">[OUT_strCRMCaseNumber]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">[strAddressOfLoft]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strYCoord">[strY]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strXCoord">[strX]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="IN_strSBI">[strSBI]</InArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSitiCaseID">[strSitiCaseNumber]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCPHNumber">[strCPH]</OutArgument>
+                          <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="inout_Config">
+                            <mva:VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="inout_Config" />
+                          </InOutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strCRMCaseNumber">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="OUT_strCRMCaseNumber" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strAddressOfLoft" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strYCoord">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strY" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strXCoord">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strX" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strSBI">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strSBI" />
+                          </InArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSitiCaseID">
+                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strSitiCaseNumber" />
+                          </OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCPHNumber">
+                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCPH" />
+                          </OutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="IN_strPostcode">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strPostcodeOfLoft" />
+                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
