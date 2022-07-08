@@ -350,11 +350,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3663fc7f-e7b3-4f6b-80c5-973cddec3364" InformativeScreenshot="9bb883be13981347b1db7371fe57ee09" Selector="&lt;html app='msedge.exe' htmlwindowname='*' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl parentid='x-auto-*' tag='BUTTON' aaname='OK' /&gt;" WaitForReady="COMPLETE">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                    </ui:Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3663fc7f-e7b3-4f6b-80c5-973cddec3364" InformativeScreenshot="9bb883be13981347b1db7371fe57ee09" Selector="&lt;html app='msedge.exe' htmlwindowname='*' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl parentid='x-auto-*' tag='BUTTON' aaname='OK' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
                   </ui:Click.Target>
                 </ui:Click>
                 <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" ContinueOnError="True" DisplayName="Activate Siti Farmer" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Activate_2">
@@ -418,10 +414,7 @@
                 </ui:UiElementExists>
                 <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'TD'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                   <ui:UiElementExists.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2a41815a-006a-4b47-a161-577cf8719fcc" InformativeScreenshot="a0b464153a8106de10a5d422cc67be0a" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer 5.2.8.4 - build: 20191118 1156' /&gt;&lt;webctrl id='x-auto-335' tag='IFRAME' /&gt;&lt;webctrl id='x-auto-348' tag='IFRAME' /&gt;&lt;webctrl id='tbl' tag='TABLE' /&gt;&lt;webctrl idx='1' tag='TD' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2a41815a-006a-4b47-a161-577cf8719fcc" InformativeScreenshot="a0b464153a8106de10a5d422cc67be0a" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer 5.2.8.4 - build: 20191118 1156' /&gt;&lt;webctrl id='x-auto-335' tag='IFRAME' /&gt;&lt;webctrl id='x-auto-348' tag='IFRAME' /&gt;&lt;webctrl id='tbl' tag='TABLE' /&gt;&lt;webctrl idx='1' tag='TD' /&gt;" TimeoutMS="5000">
                       <ui:Target.WaitForReady>
                         <InArgument x:TypeArguments="ui:WaitForReady" />
                       </ui:Target.WaitForReady>
@@ -449,7 +442,7 @@
                           <av:PointCollection x:Key="ConnectorLocation">175,521.333333333333 175,551.333333333333 174.5,551.333333333333 174.5,573.333333333333</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Create CHP No." sap:VirtualizedContainerService.HintSize="418,2526" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence DisplayName="Create CHP No." sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="ui:UiElement" Name="Test" />
                           <Variable x:TypeArguments="x:Boolean" Name="booCoordsMatch" />
@@ -772,7 +765,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:Click>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="DISABLE ACTIVITY WHEN RUNNING IN TEST" ClickType="CLICK_SINGLE" DisplayName="Click 'Assign CHP Number' On Pop Up" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="DISABLE ACTIVITY WHEN RUNNING IN TEST" ClickType="CLICK_SINGLE" DisplayName="Click 'Assign new CHP' On Pop Up" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -784,7 +777,7 @@
                               </ui:CursorPosition>
                             </ui:Click.CursorPosition>
                             <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="000b8836-717b-46b4-90ab-c03b3fe569cc" InformativeScreenshot="308ddc774060f4b96deaa29acbb4f769" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl id='x-auto-*' tag='IFRAME' /&gt;&lt;webctrl tag='IFRAME' title='Dossier' idx='4' /&gt;&lt;webctrl tag='INPUT' aaname='Assign CPH Num' /&gt;">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="000b8836-717b-46b4-90ab-c03b3fe569cc" InformativeScreenshot="308ddc774060f4b96deaa29acbb4f769" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl id='x-auto-*' tag='IFRAME' /&gt;&lt;webctrl tag='IFRAME' title='Dossier' idx='4' /&gt;&lt;webctrl tag='INPUT' aaname='Assign new CPH' /&gt;">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>

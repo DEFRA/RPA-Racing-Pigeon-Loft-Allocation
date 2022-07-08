@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>670,825</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>668,825</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Search_For_Customer_Using_Name_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -65,6 +65,7 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Search_For_Customer_Using_Name" sap:VirtualizedContainerService.HintSize="646,760" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -83,12 +84,12 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID9</x:Reference>
+      <x:Reference>__ReferenceID10</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">340,574.5</av:Point>
+          <av:Point x:Key="ShapeLocation">340,654.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -134,22 +135,22 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <av:Point x:Key="ShapeLocation">257.5,464.5</av:Point>
+          <av:Point x:Key="ShapeLocation">257.5,544.5</av:Point>
           <av:Size x:Key="ShapeSize">85,87</av:Size>
-          <av:PointCollection x:Key="TrueConnector">257.5,508 170,508 170,574.5</av:PointCollection>
-          <av:PointCollection x:Key="FalseConnector">342.5,508 440,508 440,574.5</av:PointCollection>
+          <av:PointCollection x:Key="TrueConnector">257.5,588 170,588 170,654.5</av:PointCollection>
+          <av:PointCollection x:Key="FalseConnector">342.5,588 440,588 440,654.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <FlowDecision.True>
         <FlowStep x:Name="__ReferenceID8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">70,574.5</av:Point>
+              <av:Point x:Key="ShapeLocation">70,654.5</av:Point>
               <av:Size x:Key="ShapeSize">200,51</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">270,600 340,600</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">270,680 340,680</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Flowchart sap2010:Annotation.AnnotationText="The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Results Found" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+          <Flowchart sap2010:Annotation.AnnotationText="The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Results Found" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Flowchart_2">
             <Flowchart.Variables>
               <Variable x:TypeArguments="x:String" Name="strButton" />
               <Variable x:TypeArguments="x:String" Default="[&quot;&lt;P&gt;Results have been found for the name search in Rural Payments.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Please compare information below from the registration form with the results found.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Address: &quot; + IN_strAddress +&quot;&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Email Address: &quot; +IN_strEmailAddress + &quot;&lt;/P&gt;&lt;BR&gt;&lt;P&gt;If any of the results match the information from the form, please press Stop. If there are no matches with the results found, then press Continue and the robot with continue with processing this case.&quot;]" Name="IN_PopupMessage" />
@@ -247,9 +248,9 @@
     <FlowStep x:Name="__ReferenceID6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,218.5</av:Point>
+          <av:Point x:Key="ShapeLocation">200,298.5</av:Point>
           <av:Size x:Key="ShapeSize">200,22</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,240.5 300,290.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,320.5 300,370.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <rs:Navigate_to_Search_Screen OUT_boolPageLoaded="{x:Null}" DisplayName="Navigate to Search Screen" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" IN_intTimeout="10000" sap2010:WorkflowViewState.IdRef="Navigate_to_Search_Screen_1">
@@ -263,9 +264,9 @@
         <FlowStep x:Name="__ReferenceID7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">200,290.5</av:Point>
+              <av:Point x:Key="ShapeLocation">200,370.5</av:Point>
               <av:Size x:Key="ShapeSize">200,51</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">300,341.5 300,392.5</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">300,421.5 300,472.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" DisplayName="Search For Customer Name" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="abd439eeacd93b631b7c059e7dbb33d1">
@@ -359,9 +360,9 @@
             <FlowStep x:Name="__ReferenceID5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">200,392.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">200,472.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,22</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">300,414.5 300,464.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">300,494.5 300,544.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <rs:Check_For_Search_Results DisplayName="Check For Search Results" sap:VirtualizedContainerService.HintSize="200,22" IN_browserRP="[IN_browserRP]" IN_intTimeout="5000" sap2010:WorkflowViewState.IdRef="Check_For_Search_Results_1" OUT_boolFoundResults="[boolFoundResults]">
@@ -380,12 +381,12 @@
       </FlowStep.Next>
     </FlowStep>
     <x:Reference>__ReferenceID5</x:Reference>
-    <FlowStep x:Name="__ReferenceID9">
+    <FlowStep x:Name="__ReferenceID10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,117.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,168.5 300,218.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,168.5 300,208.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" ContinueOnError="True" DisplayName="Activate RP Screen" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
@@ -415,10 +416,59 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:BrowserScope>
       <FlowStep.Next>
-        <x:Reference>__ReferenceID6</x:Reference>
+        <FlowStep x:Name="__ReferenceID9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,208.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,259.5 300,298.5</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserRP]" BrowserType="Edge" ContinueOnError="True" DisplayName="Navigate to Home Screen" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="2e4b3e812465c11f2109dfaae8188608">
+            <ui:BrowserScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click Home Button" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="acf7317e-d674-48df-bf73-c3039f9d5eb2" InformativeScreenshot="03b3986924eb54c35a681c915fd10591" Selector="&lt;webctrl aaname='Home' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+              </ActivityAction>
+            </ui:BrowserScope.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:BrowserScope>
+          <FlowStep.Next>
+            <x:Reference>__ReferenceID6</x:Reference>
+          </FlowStep.Next>
+        </FlowStep>
       </FlowStep.Next>
     </FlowStep>
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
+    <x:Reference>__ReferenceID9</x:Reference>
   </Flowchart>
 </Activity>

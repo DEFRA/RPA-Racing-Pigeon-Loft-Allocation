@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="inout_Config" Type="InOutArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="OUT_browserCRM" Type="OutArgument(ui:Browser)" />
-    <x:Property Name="OUT_browserRP" Type="OutArgument(ui:Browser)" />
+    <x:Property Name="OUT_browserSitiAgri" Type="OutArgument(ui:Browser)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -198,7 +198,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <TryCatch DisplayName="Try Open Siti Agri" sap:VirtualizedContainerService.HintSize="893,1316" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+    <TryCatch DisplayName="Try Open Siti Agri" sap:VirtualizedContainerService.HintSize="893,907" sap2010:WorkflowViewState.IdRef="TryCatch_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -206,23 +206,23 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Open Rural Payments" sap:VirtualizedContainerService.HintSize="855,1089" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence DisplayName="Open Siti Agri" sap:VirtualizedContainerService.HintSize="855,680" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <Sequence.Variables>
-            <Variable x:TypeArguments="x:Boolean" Name="boolRuralPaymentsOpen" />
+            <Variable x:TypeArguments="x:Boolean" Name="boolSitiAgriOpen" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="813,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Opening Rural Payments&quot;]" />
-          <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all open processes looking for Rural Payments" DisplayName="Check for Rural Payments Process " sap:VirtualizedContainerService.HintSize="813,517" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[collProcesses]">
+          <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="813,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Opening Siti Agri&quot;]" />
+          <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all open processes looking for Rural Payments" DisplayName="Check for Siti Agri Process " sap:VirtualizedContainerService.HintSize="813,108" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[collProcesses]">
             <ui:ForEach.Body>
               <ActivityAction x:TypeArguments="sd:Process">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:Process" Name="process" />
                 </ActivityAction.Argument>
-                <If Condition="[process.ToString.ToLower.Contains(&quot;rural payments&quot;)]" DisplayName="Process is Rural Payments?" sap:VirtualizedContainerService.HintSize="484,362" sap2010:WorkflowViewState.IdRef="If_5">
+                <If Condition="[process.ToString.ToLower.Contains(&quot;siti agri&quot;)]" DisplayName="Process is Siti Agri?" sap:VirtualizedContainerService.HintSize="484,362" sap2010:WorkflowViewState.IdRef="If_5">
                   <If.Then>
                     <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_16">
                       <sap:WorkflowViewStateService.ViewState>
@@ -232,7 +232,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
-                          <OutArgument x:TypeArguments="x:Boolean">[boolRuralPaymentsOpen]</OutArgument>
+                          <OutArgument x:TypeArguments="x:Boolean">[boolSitiAgriOpen]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
                           <InArgument x:TypeArguments="x:Boolean">True</InArgument>
@@ -247,12 +247,12 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ForEach>
-          <If Condition="[boolRuralPaymentsOpen]" DisplayName="Rural Payments Open?" sap:VirtualizedContainerService.HintSize="813,309" sap2010:WorkflowViewState.IdRef="If_6">
+          <If Condition="[boolSitiAgriOpen]" DisplayName="Siti Agri Open?" sap:VirtualizedContainerService.HintSize="813,309" sap2010:WorkflowViewState.IdRef="If_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -260,7 +260,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'Rural Payments'" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="8604d1919b6d46d9e32078e874aecbbb" Selector="&lt;html app='msedge.exe' title='Home - Rural Payments' /&gt;" UiBrowser="[OUT_browserRP]">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'Siti Agri'" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="422a5616258b25963a2e610d78475b15" Selector="&lt;html app='msedge.exe' title='sitiAgriMenu' /&gt;" UiBrowser="[OUT_browserSitiAgri]">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>

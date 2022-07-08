@@ -1124,7 +1124,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_55">
+              <Sequence sap:VirtualizedContainerService.HintSize="304,454" sap2010:WorkflowViewState.IdRef="Sequence_55">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1143,6 +1143,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_96" Text="[&quot;Phone number is &quot; + OUT_strPhoneNumber]" />
                 <Assign DisplayName="Assign Number Type" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_35">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[OUT_strNumberType]</OutArgument>
@@ -1151,10 +1152,11 @@
                     <InArgument x:TypeArguments="x:String">landlinenumber</InArgument>
                   </Assign.Value>
                 </Assign>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_97" Text="[&quot;Phone number type is &quot; + OUT_strNumberType]" />
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_56">
+              <Sequence sap:VirtualizedContainerService.HintSize="304,454" sap2010:WorkflowViewState.IdRef="Sequence_56">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1173,6 +1175,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_98" Text="[&quot;Phone number is &quot; + OUT_strPhoneNumber]" />
                 <Assign DisplayName="Assign Number Type" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_34">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[OUT_strNumberType]</OutArgument>
@@ -1181,9 +1184,27 @@
                     <InArgument x:TypeArguments="x:String">mobilenumber</InArgument>
                   </Assign.Value>
                 </Assign>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_99" Text="[&quot;Phone number type is &quot; + OUT_strNumberType]" />
               </Sequence>
             </If.Else>
           </If>
+          <Sequence DisplayName="Remove - + ( ) " sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_184">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_156">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[OUT_strPhoneNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[OUT_strPhoneNumber.Replace("-","").Replace("+","").Replace("(","").Replace(")","")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_95" Text="[OUT_strPhoneNumber]" />
+          </Sequence>
         </Sequence>
         <Sequence DisplayName="Get Voicemail Tickbox" sap:VirtualizedContainerService.HintSize="242,66" sap2010:WorkflowViewState.IdRef="Sequence_41">
           <Sequence.Variables>

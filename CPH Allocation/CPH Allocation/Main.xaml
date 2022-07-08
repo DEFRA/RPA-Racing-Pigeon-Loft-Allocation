@@ -316,7 +316,7 @@
                           <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="inout_Config">[Config]</InOutArgument>
                           <InOutArgument x:TypeArguments="sd:Stopwatch" x:Key="inout_swProcessingTimer">[swProcessingTimer]</InOutArgument>
                           <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[browserCRM]</InArgument>
-                          <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[browserRP]</InArgument>
+                          <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[browserSitiAgri]</InArgument>
                           <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCRMCaseNumber">[strCRN]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
@@ -1025,7 +1025,7 @@
                         <InArgument x:TypeArguments="s:String[]" x:Key="in_arrCaseID">[arrCaseID]</InArgument>
                         <InArgument x:TypeArguments="sd:Stopwatch" x:Key="in_swProcessingTimer">[swProcessingTimer]</InArgument>
                         <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[browserCRM]</InArgument>
-                        <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[browserRP]</InArgument>
+                        <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[browserSitiAgri]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
                   </TryCatch.Try>
@@ -1148,7 +1148,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.Condition>[boolContinue AND SystemException IsNot Nothing]</Transition.Condition>
                           <Transition.To>
-                            <State x:Name="__ReferenceID18" sap2010:Annotation.AnnotationText="Read configuration file and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="254,103" sap2010:WorkflowViewState.IdRef="State_2">
+                            <State x:Name="__ReferenceID18" sap2010:Annotation.AnnotationText="Read configuration file and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="560,1541" sap2010:WorkflowViewState.IdRef="State_2">
                               <State.Entry>
                                 <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="514,1096" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -1251,9 +1251,15 @@
                                       </ui:InvokeWorkflowFile>
                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke InitAllApplications workflow" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework\InitAllApplications.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
-                                          <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="inout_Config">[Config]</InOutArgument>
-                                          <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserCRM">[browserCRM]</OutArgument>
-                                          <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserRP">[browserRP]</OutArgument>
+                                          <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="inout_Config">
+                                            <mva:VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+                                          </InOutArgument>
+                                          <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserCRM">
+                                            <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="browserCRM" />
+                                          </OutArgument>
+                                          <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserSitiAgri">
+                                            <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="browserSitiAgri" />
+                                          </OutArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
                                       </ui:InvokeWorkflowFile>
                                       <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Delete Files In Working Directory" sap:VirtualizedContainerService.HintSize="434,203" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Directory.GetFiles(Config(&quot;WorkingDirectory&quot;).ToString)]">
@@ -1321,7 +1327,7 @@
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
                                         </ActivityAction.Argument>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="304,211" sap2010:WorkflowViewState.IdRef="Sequence_56">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1410,7 +1416,7 @@
                                                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CloseAllApplications workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Framework\CloseAllApplications.xaml">
                                                           <ui:InvokeWorkflowFile.Arguments>
                                                             <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserCRM">[browserCRM]</InArgument>
-                                                            <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[browserRP]</InArgument>
+                                                            <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[browserSitiAgri]</InArgument>
                                                           </ui:InvokeWorkflowFile.Arguments>
                                                         </ui:InvokeWorkflowFile>
                                                       </TryCatch.Try>
@@ -1714,7 +1720,7 @@
       <Variable x:TypeArguments="x:Boolean" Name="boolSkipEndConfirmation" />
       <Variable x:TypeArguments="sd:Stopwatch" Name="swProcessingTimer" />
       <Variable x:TypeArguments="ui:Browser" Name="browserCRM" />
-      <Variable x:TypeArguments="ui:Browser" Name="browserRP" />
+      <Variable x:TypeArguments="ui:Browser" Name="browserSitiAgri" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
