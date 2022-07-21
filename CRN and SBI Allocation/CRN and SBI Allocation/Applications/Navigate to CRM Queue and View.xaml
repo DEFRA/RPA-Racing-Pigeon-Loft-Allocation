@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>673,701</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>665,701</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Navigate_to_CRM_Queue_and_View_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -148,7 +148,7 @@
               <Variable x:TypeArguments="x:String" Name="strButton" />
               <Variable x:TypeArguments="x:String" Name="IN_PopupMessage">
                 <Variable.Default>
-                  <Literal x:TypeArguments="x:String">&lt;P&gt;Please select the view 'Pigeon Loft Emails' and pick the cases you would like to process.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Once you have picked the cases you would like to process, please then change the view to 'Emails I am working on', then press Continue.&lt;/P&gt;&lt;BR&gt;</Literal>
+                  <Literal x:TypeArguments="x:String">&lt;P&gt;Please select the view 'Pigeon Loft Emails' and pick the cases you would like to process.&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Once you have picked the cases you would like to process, please then change the view to 'Emails I am working on - Phase 1 Robot', then press Continue.&lt;/P&gt;&lt;BR&gt;</Literal>
                 </Variable.Default>
               </Variable>
             </Flowchart.Variables>

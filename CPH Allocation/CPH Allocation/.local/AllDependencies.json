@@ -5345,15 +5345,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\M1006990\\.nuget\\packages\\": {}
+    "C:\\Users\\x953923\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Racing_Pigeon_Loft_Allocation_CPH Allocation",
       "projectName": "Racing_Pigeon_Loft_Allocation_CPH Allocation",
-      "projectPath": "C:\\Users\\M1006990\\OneDrive - Defra\\UiPath Working Folder\\RPA-Racing-Pigeon-Loft-Allocation\\CPH Allocation\\CPH Allocation\\.local",
-      "packagesPath": "C:\\Users\\M1006990\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\M1006990\\OneDrive - Defra\\UiPath Working Folder\\RPA-Racing-Pigeon-Loft-Allocation\\CPH Allocation\\CPH Allocation\\.local"
+      "projectPath": "C:\\Users\\x953923\\OneDrive - Defra\\Git\\RPA-Racing-Pigeon-Loft-Allocation\\CPH Allocation\\CPH Allocation\\.local",
+      "packagesPath": "C:\\Users\\x953923\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\x953923\\OneDrive - Defra\\Git\\RPA-Racing-Pigeon-Loft-Allocation\\CPH Allocation\\CPH Allocation\\.local"
     },
     "frameworks": {
       "net461": {

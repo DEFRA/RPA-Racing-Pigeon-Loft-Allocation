@@ -31,7 +31,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,1090.66666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1094,1091</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Read_PDF_Form_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="27">
@@ -94,10 +94,9 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="Read_PDF_Form" sap:VirtualizedContainerService.HintSize="1104.66666666667,1026" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Read_PDF_Form" sap:VirtualizedContainerService.HintSize="1104,1026" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="strPDF" />
       <Variable x:TypeArguments="x:Boolean" Name="boolCorrectPDF" />
@@ -108,7 +107,7 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">260,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">290,77.5 290,127.5</av:PointCollection>
         <x:Double x:Key="Height">990</x:Double>
         <x:Double x:Key="Width">1070.5</x:Double>
@@ -121,11 +120,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">190,703</av:Point>
-          <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">290,772.333333333333 290,819</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,769 290,819</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Extract Information" sap:VirtualizedContainerService.HintSize="748,4904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence DisplayName="Extract Information" sap:VirtualizedContainerService.HintSize="242,1218" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Int32" Name="intTimeout" />
         </Sequence.Variables>
@@ -134,32 +133,24 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="706,62" sap2010:WorkflowViewState.IdRef="Assign_158">
-          <Assign.To>
-            <OutArgument x:TypeArguments="x:String">[strPDF]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="x:String">Racing Pigeon Establishment Registration Form Important notes Use this form to register your establishment and request your CPH number. Before you submit the form you must: • read the Guidance: racing pigeon establishment application for a county parish holding number • fill in all parts of the form If you do not complete the form in full this will delay your registration and the issue of your CPH number. To fill it in electronically: Download the form and save it to your computer (if you don’t, the ‘email’ button may not work) Fill in the form and save it again Email the form to ‘ruralpayments@defra.gov.uk’ (you can use the ‘email’ button on the form to do this). Use ‘Racing Pigeon Establishment Registration Form’ as the subject or your email. Title Mr First name Peter Last name Carmichael Single Business Identifier (SBI) Number (if applicable) Single business identifier Business/Trading Name (Required in order to complete Registration - This can be the same as your name if you do not have a separate business or trading name) Peter Carmichael Business/correspondence address Holtby First Lane Hessle East Yorks Postcode HU13 9HD Landline 01482 649005 Mobile 07920557310 Tick the box to confirm you are happy to be left a voicemail Tick if happy to receive voicemail message Email address peter181045@peter181045.karoo.co.uk Legal status - Select the appropriate option legal status - Sole proprietor Sole proprietor legal status - Partnership Partnership legal status - charity Charity legal status - private limited company Private Limited Company Charity Commission Registration Number (If applicable) Charity Commission Registration Number Companies House Number (If applicable) Companies House Number Address of loft Holtby First lane Hessle East Yorks Postcode HU13 9HD GPS co-ordinates of loft (X/Y) Easting 504112 Northing 427423 Form of Tenure Select the appropriate option Form of tenure - owner 01 Owner Form of tenure - tenant - year or less 01 Tenant - year or less Form of tenure - tenant - more than a year 01 Tenant - more than a year Address of loft HOLTBY First Lane Hessle East Yorks Postcode HU13 9HD GPS co-ordinates of loft (X/Y) Easting 504112 Northing 427423 Form of Tenure Select the appropriate option Form of tenure - owner 02 Owner Form of tenure - tenant - year or less 02 Tenant - year or less Form of tenure - tenant - more than a year 02 Tenant - more than a year Address of loft Loft Address Postcode postcode of loft 3 GPS co-ordinates of loft (X/Y) Easting X/Y co-ordinates of loft 5 Northing X/Y co-ordinates of loft 6 Form of Tenure Select the appropriate option Form of tenure - owner 03 Owner Form of tenure - tenant - year or less 03 Tenant - year or less Form of tenure - tenant - more than a year 03 Tenant - more than a year Email form Email form</InArgument>
-          </Assign.Value>
-        </Assign>
-        <Sequence DisplayName="Get Title" sap:VirtualizedContainerService.HintSize="706,857.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Get Title" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesTitle" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Title" sap:VirtualizedContainerService.HintSize="550,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Title\s).*?(?=\s+First name)" RegexOption="IgnoreCase, Singleline" Result="[matchesTitle]">
+          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Title" sap:VirtualizedContainerService.HintSize="549,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Title\s).*?(?=\s+First name)" RegexOption="IgnoreCase, Singleline" Result="[matchesTitle]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:Matches>
-          <If Condition="[matchesTitle.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="550,216" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[matchesTitle.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="549,208" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,7 +167,7 @@
               </Throw>
             </If.Then>
             <If.Else>
-              <Assign DisplayName="Assign Title" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_37">
+              <Assign DisplayName="Assign Title" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_37">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[OUT_strTitle]</OutArgument>
                 </Assign.To>
@@ -191,7 +182,7 @@
               </Assign>
             </If.Else>
           </If>
-          <If Condition="[OUT_strTitle.ToLower = &quot;na&quot; or OUT_strTitle.ToLower = &quot;n\a&quot; or OUT_strTitle.ToLower = &quot;n/a&quot; or OUT_strTitle.ToLower.Contains(&quot;title&quot;)]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="550,410.666666666667" sap2010:WorkflowViewState.IdRef="If_33">
+          <If Condition="[OUT_strTitle.ToLower = &quot;na&quot; or OUT_strTitle.ToLower = &quot;n\a&quot; or OUT_strTitle.ToLower = &quot;n/a&quot; or OUT_strTitle.ToLower.Contains(&quot;title&quot;)]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="549,405" sap2010:WorkflowViewState.IdRef="If_33">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -233,24 +224,24 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get First Name" sap:VirtualizedContainerService.HintSize="706,336" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Get First Name" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesFirstName" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches First Name" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=First name\s).*?(?=\s+Last name)" RegexOption="IgnoreCase, Singleline" Result="[matchesFirstName]">
+          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches First Name" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=First name\s).*?(?=\s+Last name)" RegexOption="IgnoreCase, Singleline" Result="[matchesFirstName]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:Matches>
-          <If Condition="[matchesFirstName.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[matchesFirstName.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -282,7 +273,7 @@
               </Assign>
             </If.Else>
           </If>
-          <If Condition="[OUT_strFirstName.ToLower = &quot;na&quot; or OUT_strFirstName.ToLower = &quot;n\a&quot; or OUT_strFirstName.ToLower = &quot;n/a&quot; or OUT_strFirstName.ToLower.Contains(&quot;name&quot;)]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_34">
+          <If Condition="[OUT_strFirstName.ToLower = &quot;na&quot; or OUT_strFirstName.ToLower = &quot;n\a&quot; or OUT_strFirstName.ToLower = &quot;n/a&quot; or OUT_strFirstName.ToLower.Contains(&quot;name&quot;)]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_34">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -324,7 +315,7 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Last Name" sap:VirtualizedContainerService.HintSize="706,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Get Last Name" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesLastName" />
           </Sequence.Variables>
@@ -430,24 +421,24 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Business/Trading Name" sap:VirtualizedContainerService.HintSize="706,243.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="Get Business/Trading Name" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesBusinessName" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Business/Trading Name" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_5" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Business\WTrading Name &#xA;\WRequired in order to complete &#xA;Registration - This can be the same as &#xA;your name if you do not have a separate &#xA;business or trading name\W\s).*?(?=\sBusiness\Wcorrespondence address)" RegexOption="IgnoreCase, Singleline" Result="[matchesBusinessName]">
+          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Business/Trading Name" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_5" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Business\WTrading Name &#xA;\WRequired in order to complete &#xA;Registration - This can be the same as &#xA;your name if you do not have a separate &#xA;business or trading name\W\s).*?(?=\sBusiness\Wcorrespondence address)" RegexOption="IgnoreCase, Singleline" Result="[matchesBusinessName]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:Matches>
-          <If Condition="[matchesBusinessName.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_5">
+          <If Condition="[matchesBusinessName.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -553,24 +544,24 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Business Address" sap:VirtualizedContainerService.HintSize="706,1600" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <Sequence DisplayName="Get Business Address" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_13">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesBusinessAddress" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Business Address" sap:VirtualizedContainerService.HintSize="664,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_6" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Business\Wcorrespondence address\s).*?(?=\sPostcode)" RegexOption="IgnoreCase, Singleline" Result="[matchesBusinessAddress]">
+          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Business Address" sap:VirtualizedContainerService.HintSize="664,59" sap2010:WorkflowViewState.IdRef="Matches_6" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Business\Wcorrespondence address\s).*?(?=\sPostcode)" RegexOption="IgnoreCase, Singleline" Result="[matchesBusinessAddress]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:Matches>
-          <If Condition="[matchesBusinessAddress.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="664,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_6">
+          <If Condition="[matchesBusinessAddress.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="664,51" sap2010:WorkflowViewState.IdRef="If_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -602,7 +593,7 @@
               </Assign>
             </If.Else>
           </If>
-          <If Condition="[OUT_strBusinessAddress.ToLower = &quot;na&quot; or OUT_strBusinessAddress.ToLower = &quot;n\a&quot; or OUT_strBusinessAddress.ToLower = &quot;n/a&quot; or OUT_strBusinessAddress.ToLower.Contains(&quot;address&quot;)]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="664,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_38">
+          <If Condition="[OUT_strBusinessAddress.ToLower = &quot;na&quot; or OUT_strBusinessAddress.ToLower = &quot;n\a&quot; or OUT_strBusinessAddress.ToLower = &quot;n/a&quot; or OUT_strBusinessAddress.ToLower.Contains(&quot;address&quot;)]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="664,51" sap2010:WorkflowViewState.IdRef="If_38">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -644,14 +635,14 @@
               </Sequence>
             </If.Else>
           </If>
-          <Sequence DisplayName="Format Address" sap:VirtualizedContainerService.HintSize="664,1224" sap2010:WorkflowViewState.IdRef="Sequence_69">
+          <Sequence DisplayName="Format Address" sap:VirtualizedContainerService.HintSize="664,1218" sap2010:WorkflowViewState.IdRef="Sequence_69">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[OUT_strBusinessAddress.Contains(Environment.NewLine) OR OUT_strBusinessAddress.Contains(&quot;,&quot;) OR OUT_strBusinessAddress.contains(vbCr) OR OUT_strBusinessAddress.contains(vbLf)]" DisplayName="If OUT_strBusinessAddress contains new lines" sap:VirtualizedContainerService.HintSize="622,1039.33333333333" sap2010:WorkflowViewState.IdRef="If_50">
+            <If Condition="[OUT_strBusinessAddress.Contains(Environment.NewLine) OR OUT_strBusinessAddress.Contains(&quot;,&quot;) OR OUT_strBusinessAddress.contains(vbCr) OR OUT_strBusinessAddress.contains(vbLf)]" DisplayName="If OUT_strBusinessAddress contains new lines" sap:VirtualizedContainerService.HintSize="622,1033" sap2010:WorkflowViewState.IdRef="If_50">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -800,7 +791,7 @@
             </ui:CommentOut>
           </Sequence>
         </Sequence>
-        <Sequence DisplayName="Get Postcode" sap:VirtualizedContainerService.HintSize="706,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <Sequence DisplayName="Get Postcode" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesPostcode" />
           </Sequence.Variables>
@@ -891,7 +882,7 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Phone Number" sap:VirtualizedContainerService.HintSize="706,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence DisplayName="Get Phone Number" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesMobile" />
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesLandline" />
@@ -1110,7 +1101,7 @@
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_96" Text="[OUT_strPhoneNumber]" />
           </Sequence>
         </Sequence>
-        <Sequence DisplayName="Get Email Address" sap:VirtualizedContainerService.HintSize="706,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
+        <Sequence DisplayName="Get Email Address" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_19">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesEmail" />
           </Sequence.Variables>
@@ -1194,24 +1185,24 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Address Of Loft" sap:VirtualizedContainerService.HintSize="706,857.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
+        <Sequence DisplayName="Get Address Of Loft" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_27">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesAddressOfLoft" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Address Of Loft" sap:VirtualizedContainerService.HintSize="550,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_14" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Address of loft\s).*?(?=\sPostcode)" RegexOption="IgnoreCase, Singleline" Result="[matchesAddressOfLoft]">
+          <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Address Of Loft" sap:VirtualizedContainerService.HintSize="550,59" sap2010:WorkflowViewState.IdRef="Matches_14" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Address of loft\s).*?(?=\sPostcode)" RegexOption="IgnoreCase, Singleline" Result="[matchesAddressOfLoft]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:Matches>
-          <If Condition="[matchesAddressOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="550,216" sap2010:WorkflowViewState.IdRef="If_12">
+          <If Condition="[matchesAddressOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="550,208" sap2010:WorkflowViewState.IdRef="If_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1228,7 +1219,7 @@
               </Throw>
             </If.Then>
             <If.Else>
-              <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_51">
+              <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_51">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[OUT_strAddressOfLoft]</OutArgument>
                 </Assign.To>
@@ -1285,7 +1276,7 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Postcode Of Loft" sap:VirtualizedContainerService.HintSize="706,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_182">
+        <Sequence DisplayName="Get Postcode Of Loft" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_182">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesPostcodeOfLoft" />
             <Variable x:TypeArguments="x:String" Name="strPostcodeOfLoftMatch" />
@@ -1519,7 +1510,7 @@
             </If.Else>
           </If>
         </Sequence>
-        <Sequence DisplayName="Get Coordinates" sap:VirtualizedContainerService.HintSize="706,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_38">
+        <Sequence DisplayName="Get Coordinates" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_38">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesXCoordinate" />
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesYCoordinate" />
@@ -1644,11 +1635,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">190,819</av:Point>
-              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">290,871.666666666667 290,920</av:PointCollection>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">290,870 290,920</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:CloseApplication DisplayName="Close Application 'Adobe'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+          <ui:CloseApplication DisplayName="Close Application 'Adobe'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
             <ui:CloseApplication.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f53839b8-3483-4c73-97e6-afce6d97622b" InformativeScreenshot="cb6a0f446ff547c41016b17bd004fbbe" Selector="&lt;wnd app='acrord*.exe' cls='AcrobatSDIWindow' /&gt;">
                 <ui:Target.TimeoutMS>
@@ -1665,10 +1656,10 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">190,920</av:Point>
-                  <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                  <av:Size x:Key="ShapeSize">200,51</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[IN_CurrentPDFFilePath]">
+              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[IN_CurrentPDFFilePath]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1684,11 +1675,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">190,243.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">290,296.166666666667 290,344.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,294.5 290,344.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[&quot;$Command = '&quot; &amp; IN_AdobeFilePath &amp; &quot;'&quot; &amp; Environment.NewLine &amp; &quot;$Parms = '&quot; &amp; IN_CurrentPDFFilePath &amp; &quot;'&quot; &amp; Environment.NewLine &amp; &quot;&amp; &quot;&quot;$Command&quot;&quot; $Parms&quot;]" DisplayName="Invoke Power Shell - Open PDF document" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True">
+      <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[&quot;$Command = '&quot; &amp; IN_AdobeFilePath &amp; &quot;'&quot; &amp; Environment.NewLine &amp; &quot;$Parms = '&quot; &amp; IN_CurrentPDFFilePath &amp; &quot;'&quot; &amp; Environment.NewLine &amp; &quot;&amp; &quot;&quot;$Command&quot;&quot; $Parms&quot;]" DisplayName="Invoke Power Shell - Open PDF document" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1700,11 +1691,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">190,344.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">290,397.166666666667 290,445.5</av:PointCollection>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">290,395.5 290,445.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Read PDF" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+          <TryCatch DisplayName="Try Read PDF" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1764,12 +1755,12 @@
             </TryCatch.Catches>
           </TryCatch>
           <FlowStep.Next>
-            <FlowDecision x:Name="__ReferenceID5" Condition="[strPDF IsNot Nothing]" DisplayName="Read PDF?" sap:VirtualizedContainerService.HintSize="70,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <FlowDecision x:Name="__ReferenceID5" Condition="[strPDF IsNot Nothing]" DisplayName="Read PDF?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <av:Point x:Key="ShapeLocation">255,445.5</av:Point>
-                  <av:Size x:Key="ShapeSize">70,86.6666666666667</av:Size>
+                  <av:Size x:Key="ShapeSize">70,87</av:Size>
                   <av:PointCollection x:Key="TrueConnector">255,489 230,489 230,557 290,557 290,587</av:PointCollection>
                   <av:PointCollection x:Key="FalseConnector">325,489 425,489</av:PointCollection>
                 </scg:Dictionary>
@@ -1779,24 +1770,24 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">190,587</av:Point>
-                      <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">290,656.333333333333 290,703</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">200,66</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">290,653 290,703</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Write PDF" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                  <Sequence DisplayName="Write PDF" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_74">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_45" Text="[strPDF]">
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_45" Text="[strPDF]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </WriteLine>
-                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_62">
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_62">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[intLocalRetry]</OutArgument>
                       </Assign.To>
@@ -1815,11 +1806,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">425,463.5</av:Point>
-                      <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                      <av:Size x:Key="ShapeSize">200,51</av:Size>
                       <av:PointCollection x:Key="ConnectorLocation">625,489 690,489 690,545.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch DisplayName="Try Read PDF" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                  <TryCatch DisplayName="Try Read PDF" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                     <TryCatch.Try>
                       <Sequence sap:VirtualizedContainerService.HintSize="588,1353" sap2010:WorkflowViewState.IdRef="Sequence_94">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1982,12 +1973,12 @@
                     </TryCatch.Catches>
                   </TryCatch>
                   <FlowStep.Next>
-                    <FlowDecision x:Name="__ReferenceID11" Condition="[strPDF IsNot Nothing]" DisplayName="Read PDF?" sap:VirtualizedContainerService.HintSize="70,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+                    <FlowDecision x:Name="__ReferenceID11" Condition="[strPDF IsNot Nothing]" DisplayName="Read PDF?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <av:Point x:Key="ShapeLocation">655,545.5</av:Point>
-                          <av:Size x:Key="ShapeSize">70,86.6666666666667</av:Size>
+                          <av:Size x:Key="ShapeSize">70,87</av:Size>
                           <av:PointCollection x:Key="TrueConnector">655,589 540,589 540,697</av:PointCollection>
                           <av:PointCollection x:Key="FalseConnector">725,589 785.5,589 785.5,323.5</av:PointCollection>
                         </scg:Dictionary>
@@ -1997,11 +1988,11 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">440,697</av:Point>
-                              <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">540,766.333333333333 540,844.333333333333 390,844.333333333333</av:PointCollection>
+                              <av:Size x:Key="ShapeSize">200,66</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">540,763 540,845.5 390,845.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Extract Information" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_152">
+                          <Sequence DisplayName="Extract Information" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_152">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Int32" Name="intTimeout" />
                               <Variable x:TypeArguments="x:String" Name="strCoords" />
@@ -2011,7 +2002,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign DisplayName="Replace New Lines with ," sap:VirtualizedContainerService.HintSize="962,60" sap2010:WorkflowViewState.IdRef="Assign_130">
+                            <Assign DisplayName="Replace New Lines with ," sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_130">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[strPDF]</OutArgument>
                               </Assign.To>
@@ -2019,8 +2010,8 @@
                                 <InArgument x:TypeArguments="x:String">[strPDF.Replace(Environment.NewLine,"$").Replace(vbCr,"$").Replace(vbLf,"$")]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="962,61" sap2010:WorkflowViewState.IdRef="WriteLine_81" Text="[strPDF]" />
-                            <Sequence DisplayName="Get Title" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_81" Text="[strPDF]" />
+                            <Sequence DisplayName="Get Title" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_96">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesTitle" />
                               </Sequence.Variables>
@@ -2111,7 +2102,7 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get First Name" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                            <Sequence DisplayName="Get First Name" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_98">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesFirstName" />
                               </Sequence.Variables>
@@ -2203,7 +2194,7 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Last Name" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_101">
+                            <Sequence DisplayName="Get Last Name" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_101">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesLastName" />
                               </Sequence.Variables>
@@ -2309,7 +2300,7 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Business/Trading Name" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_108">
+                            <Sequence DisplayName="Get Business/Trading Name" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_108">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesBusinessName" />
                               </Sequence.Variables>
@@ -2432,7 +2423,7 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Business Address" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                            <Sequence DisplayName="Get Business Address" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_116">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesBusinessAddress" />
                               </Sequence.Variables>
@@ -2694,7 +2685,7 @@
                                 </ui:CommentOut>
                               </Sequence>
                             </Sequence>
-                            <Sequence DisplayName="Get Postcode" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                            <Sequence DisplayName="Get Postcode" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_118">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesPostcode" />
                               </Sequence.Variables>
@@ -2785,7 +2776,7 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Phone Number" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                            <Sequence DisplayName="Get Phone Number" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_123">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesMobile" />
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesLandline" />
@@ -2913,7 +2904,7 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Email Address" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_125">
+                            <Sequence DisplayName="Get Email Address" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_125">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesEmail" />
                               </Sequence.Variables>
@@ -3079,222 +3070,98 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Coordinates" sap:VirtualizedContainerService.HintSize="962,1329" sap2010:WorkflowViewState.IdRef="Sequence_147">
+                            <Sequence DisplayName="Get Address Of Loft" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_185">
                               <Sequence.Variables>
-                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesXCoordinate" />
-                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesYCoordinate" />
-                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesCoordinate" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesAddressOfLoft" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Coordinates" sap:VirtualizedContainerService.HintSize="920,59" sap2010:WorkflowViewState.IdRef="Matches_34" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d\s\d\s\d\s\d\s\d\s\d" RegexOption="IgnoreCase, Singleline" Result="[matchesCoordinate]">
+                              <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Address Of Loft" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_42" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$).*?(?=\s\$\$)" RegexOption="IgnoreCase, Singleline" Result="[matchesAddressOfLoft]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:Matches>
-                              <If Condition="[matchesCoordinate.Count = 0 OR matchesCoordinate.Count = 1]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="920,1138" sap2010:WorkflowViewState.IdRef="If_98">
+                              <If Condition="[matchesAddressOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_127">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="633,990" sap2010:WorkflowViewState.IdRef="Sequence_158">
+                                  <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Address Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_69">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Coordinates" sap:VirtualizedContainerService.HintSize="591,59" sap2010:WorkflowViewState.IdRef="Matches_37" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\$\$\d{4,6}\s\d{4,6}" RegexOption="IgnoreCase, Singleline" Result="[matchesCoordinate]">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </ui:Matches>
-                                    <If Condition="[matchesCoordinate.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="591,799" sap2010:WorkflowViewState.IdRef="If_109">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <If.Then>
-                                        <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No X and Y Coordinate input on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_56">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Throw>
-                                      </If.Then>
-                                      <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="346,651" sap2010:WorkflowViewState.IdRef="Sequence_161">
-                                          <Sequence.Variables>
-                                            <Variable x:TypeArguments="s:String[]" Name="arrCoords" />
-                                          </Sequence.Variables>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Assign DisplayName="Assign Postcode Of Loft" sap:VirtualizedContainerService.HintSize="304,60" sap2010:WorkflowViewState.IdRef="Assign_138">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:String">[strCoords]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(0).ToString.Trim]</InArgument>
-                                            </Assign.Value>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </Assign>
-                                          <Assign sap:VirtualizedContainerService.HintSize="304,60" sap2010:WorkflowViewState.IdRef="Assign_149">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="s:String[]">[arrCoords]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="s:String[]">[strCoords.Split({" "c},StringSplitOptions.RemoveEmptyEntries)]</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                          <Sequence DisplayName="Match X Coord" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_171">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_150">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:String">[OUT_strXCoord]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:String">[arrCoords(0).Replace("$","")]</InArgument>
-                                              </Assign.Value>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </Assign>
-                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_86" Text="[&quot;X coordinate is &quot; + OUT_strXCoord]">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </WriteLine>
-                                          </Sequence>
-                                          <Sequence DisplayName="Match Y Coord" sap:VirtualizedContainerService.HintSize="304,66" sap2010:WorkflowViewState.IdRef="Sequence_172">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_151">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:String">[OUT_strYCoord]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:String">[arrCoords(1)]</InArgument>
-                                              </Assign.Value>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </Assign>
-                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_87" Text="[&quot;Y coordinate is &quot; + OUT_strYCoord]">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </WriteLine>
-                                          </Sequence>
-                                        </Sequence>
-                                      </If.Else>
-                                    </If>
-                                  </Sequence>
+                                  </Throw>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="242,264" sap2010:WorkflowViewState.IdRef="Sequence_156">
+                                  <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_159">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[OUT_strAddressOfLoft]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[matchesAddressOfLoft.First.Groups(0).ToString.Trim]</InArgument>
+                                    </Assign.Value>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence DisplayName="Match X Coord" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_145">
+                                  </Assign>
+                                </If.Else>
+                              </If>
+                              <If Condition="[OUT_strAddressOfLoft.ToLower = &quot;na&quot; or OUT_strAddressOfLoft.ToLower = &quot;n\a&quot; or OUT_strAddressOfLoft.ToLower = &quot;n/a&quot;]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_128">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Address Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_70">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Throw>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_184">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_160">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[OUT_strBusinessAddress]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[StrConv(OUT_strBusinessAddress, VbStrConv.ProperCase)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_97" Text="[&quot;Address Of Loft is &quot; + OUT_strAddressOfLoft]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_125">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[OUT_strXCoord]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(0).ToString.Trim]</InArgument>
-                                        </Assign.Value>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Assign>
-                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_78" Text="[&quot;X coordinate is &quot; + OUT_strXCoord]">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </WriteLine>
-                                    </Sequence>
-                                    <Sequence DisplayName="Match Y Coord" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_155">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_134">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[OUT_strYCoord]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(1).ToString.Trim]</InArgument>
-                                        </Assign.Value>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Assign>
-                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="WriteLine_82" Text="[&quot;Y coordinate is &quot; + OUT_strYCoord]">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </WriteLine>
-                                    </Sequence>
+                                    </WriteLine>
                                   </Sequence>
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Sequence DisplayName="Get Postcode Of Loft" sap:VirtualizedContainerService.HintSize="962,66" sap2010:WorkflowViewState.IdRef="Sequence_144">
+                            <Sequence DisplayName="Get Postcode Of Loft" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_186">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesPostcodeOfLoft" />
                               </Sequence.Variables>
@@ -3304,7 +3171,7 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Postcode Of Loft" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_33" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?&lt;=\$\$)\w{2,4}\s?\w{2,4}(?=\s\$&quot; + strCoords + &quot;)&quot;]" RegexOption="IgnoreCase, Singleline" Result="[matchesPostcodeOfLoft]">
+                              <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Postcode Of Loft" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_43" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?&lt;=year \$&quot; + OUT_strAddressOfLoft + &quot; \$\$)\w{2,4}\s?\w{2,4}(?=\s\$)&quot;]" RegexOption="IgnoreCase, Singleline" Result="[matchesPostcodeOfLoft]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3312,7 +3179,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:Matches>
-                              <If Condition="[matchesPostcodeOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_96">
+                              <If Condition="[matchesPostcodeOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_129">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3320,7 +3187,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_137">
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_161">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[OUT_strPostcodeOfLoft]</OutArgument>
                                     </Assign.To>
@@ -3330,7 +3197,7 @@
                                   </Assign>
                                 </If.Then>
                                 <If.Else>
-                                  <Assign DisplayName="Assign Postcode Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_124">
+                                  <Assign DisplayName="Assign Postcode Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_162">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[OUT_strPostcodeOfLoft]</OutArgument>
                                     </Assign.To>
@@ -3345,7 +3212,7 @@
                                   </Assign>
                                 </If.Else>
                               </If>
-                              <If Condition="[OUT_strPostcodeOfLoft.ToLower = &quot;na&quot; or OUT_strPostcodeOfLoft.ToLower = &quot;n\a&quot; or OUT_strPostcodeOfLoft.ToLower = &quot;n/a&quot;]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_97">
+                              <If Condition="[OUT_strPostcodeOfLoft.ToLower = &quot;na&quot; or OUT_strPostcodeOfLoft.ToLower = &quot;n\a&quot; or OUT_strPostcodeOfLoft.ToLower = &quot;n/a&quot;]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_130">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3353,7 +3220,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Postcode Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_55">
+                                  <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Postcode Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_71">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3362,7 +3229,7 @@
                                   </Throw>
                                 </If.Then>
                                 <If.Else>
-                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_77" Text="[&quot;Postcode Of Loft is &quot; + OUT_strPostcodeOfLoft]">
+                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_98" Text="[&quot;Postcode Of Loft is &quot; + OUT_strPostcodeOfLoft]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3371,58 +3238,56 @@
                                   </WriteLine>
                                 </If.Else>
                               </If>
-                              <If Condition="[OUT_strPostcodeOfLoft.Replace(&quot; &quot;,&quot;&quot;).ToUpper = OUT_strPostcode.Replace(&quot; &quot;,&quot;&quot;).ToUpper]" DisplayName="If Postcodes match" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_107">
+                            </Sequence>
+                            <Sequence DisplayName="Get Coordinates" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_192">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesXCoordinate" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesYCoordinate" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesCoordinate" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Coordinates" sap:VirtualizedContainerService.HintSize="982,59" sap2010:WorkflowViewState.IdRef="Matches_44" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d\s\d\s\d\s\d\s\d\s\d" RegexOption="IgnoreCase, Singleline" Result="[matchesCoordinate]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <If Condition="[matchesCoordinate.Count = 0 OR matchesCoordinate.Count = 1]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="982,786" sap2010:WorkflowViewState.IdRef="If_132">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_165">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="591,491" sap2010:WorkflowViewState.IdRef="Sequence_188">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_135">
-                                      <Assign.To>
-                                        <OutArgument x:TypeArguments="x:String">[OUT_strAddressOfLoft]</OutArgument>
-                                      </Assign.To>
-                                      <Assign.Value>
-                                        <InArgument x:TypeArguments="x:String">[OUT_strBusinessAddress]</InArgument>
-                                      </Assign.Value>
-                                    </Assign>
-                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_85" Text="[OUT_strAddressOfLoft]" />
-                                  </Sequence>
-                                </If.Then>
-                                <If.Else>
-                                  <Sequence DisplayName="Get Address Of Loft" sap:VirtualizedContainerService.HintSize="376,333" sap2010:WorkflowViewState.IdRef="Sequence_143">
-                                    <Sequence.Variables>
-                                      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesAddressOfLoft" />
-                                    </Sequence.Variables>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Address Of Loft" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_32" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?&lt;=Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$).*?(?=\s\$\$&quot; + OUT_strPostcodeOfLoft + &quot;)&quot;]" RegexOption="IgnoreCase, Singleline" Result="[matchesAddressOfLoft]">
+                                    <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Coordinates" sap:VirtualizedContainerService.HintSize="549,59" sap2010:WorkflowViewState.IdRef="Matches_45" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\$\$\d{4,6}\s\d{4,6}" RegexOption="IgnoreCase, Singleline" Result="[matchesCoordinate]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:Matches>
-                                    <If Condition="[matchesAddressOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_94">
+                                    <If Condition="[matchesCoordinate.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="549,300" sap2010:WorkflowViewState.IdRef="If_131">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Address Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_52">
+                                        <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No X and Y Coordinate input on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_72">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3431,66 +3296,533 @@
                                         </Throw>
                                       </If.Then>
                                       <If.Else>
-                                        <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_122">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:String">[OUT_strAddressOfLoft]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[matchesAddressOfLoft.First.Groups(0).ToString.Trim]</InArgument>
-                                          </Assign.Value>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_187">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                        </Assign>
-                                      </If.Else>
-                                    </If>
-                                    <If Condition="[OUT_strAddressOfLoft.ToLower = &quot;na&quot; or OUT_strAddressOfLoft.ToLower = &quot;n\a&quot; or OUT_strAddressOfLoft.ToLower = &quot;n/a&quot;]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_95">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <If.Then>
-                                        <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Address Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_53">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Throw>
-                                      </If.Then>
-                                      <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="304,254" sap2010:WorkflowViewState.IdRef="Sequence_142">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_123">
+                                          <Assign DisplayName="Assign Postcode Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_163">
                                             <Assign.To>
-                                              <OutArgument x:TypeArguments="x:String">[OUT_strBusinessAddress]</OutArgument>
+                                              <OutArgument x:TypeArguments="x:String">[strCoords]</OutArgument>
                                             </Assign.To>
                                             <Assign.Value>
-                                              <InArgument x:TypeArguments="x:String">[StrConv(OUT_strBusinessAddress, VbStrConv.ProperCase)]</InArgument>
+                                              <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(0).ToString.Trim]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="346,638" sap2010:WorkflowViewState.IdRef="Sequence_191">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Match X Coord" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_189">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_164">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[OUT_strXCoord]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(0).ToString.Trim]</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_99" Text="[&quot;X coordinate is &quot; + OUT_strXCoord]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </WriteLine>
+                                    </Sequence>
+                                    <Sequence DisplayName="Match Y Coord" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_190">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_165">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[OUT_strYCoord]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(1).ToString.Trim]</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_100" Text="[&quot;Y coordinate is &quot; + OUT_strYCoord]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </WriteLine>
+                                    </Sequence>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="284,356" sap2010:WorkflowViewState.IdRef="Sequence_194">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="242,264" sap2010:WorkflowViewState.IdRef="Sequence_193">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Get Coordinates" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_147">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesXCoordinate" />
+                                        <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesYCoordinate" />
+                                        <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesCoordinate" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Coordinates" sap:VirtualizedContainerService.HintSize="920,59" sap2010:WorkflowViewState.IdRef="Matches_34" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d\s\d\s\d\s\d\s\d\s\d" RegexOption="IgnoreCase, Singleline" Result="[matchesCoordinate]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Matches>
+                                      <If Condition="[matchesCoordinate.Count = 0 OR matchesCoordinate.Count = 1]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="920,1138" sap2010:WorkflowViewState.IdRef="If_98">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="633,990" sap2010:WorkflowViewState.IdRef="Sequence_158">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Coordinates" sap:VirtualizedContainerService.HintSize="591,59" sap2010:WorkflowViewState.IdRef="Matches_37" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\$\$\d{4,6}\s\d{4,6}" RegexOption="IgnoreCase, Singleline" Result="[matchesCoordinate]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:Matches>
+                                            <If Condition="[matchesCoordinate.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="591,799" sap2010:WorkflowViewState.IdRef="If_109">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No X and Y Coordinate input on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_56">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Throw>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="346,651" sap2010:WorkflowViewState.IdRef="Sequence_161">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="s:String[]" Name="arrCoords" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign DisplayName="Assign Postcode Of Loft" sap:VirtualizedContainerService.HintSize="304,60" sap2010:WorkflowViewState.IdRef="Assign_138">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strCoords]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(0).ToString.Trim]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="304,60" sap2010:WorkflowViewState.IdRef="Assign_149">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="s:String[]">[arrCoords]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="s:String[]">[strCoords.Split({" "c},StringSplitOptions.RemoveEmptyEntries)]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Sequence DisplayName="Match X Coord" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_171">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_150">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[OUT_strXCoord]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[arrCoords(0).Replace("$","")]</InArgument>
+                                                      </Assign.Value>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Assign>
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_86" Text="[&quot;X coordinate is &quot; + OUT_strXCoord]">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </WriteLine>
+                                                  </Sequence>
+                                                  <Sequence DisplayName="Match Y Coord" sap:VirtualizedContainerService.HintSize="304,66" sap2010:WorkflowViewState.IdRef="Sequence_172">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_151">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[OUT_strYCoord]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[arrCoords(1)]</InArgument>
+                                                      </Assign.Value>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Assign>
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_87" Text="[&quot;Y coordinate is &quot; + OUT_strYCoord]">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </WriteLine>
+                                                  </Sequence>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="242,264" sap2010:WorkflowViewState.IdRef="Sequence_156">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="Match X Coord" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_145">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_125">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[OUT_strXCoord]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(0).ToString.Trim]</InArgument>
+                                                </Assign.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Assign>
+                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_78" Text="[&quot;X coordinate is &quot; + OUT_strXCoord]">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </WriteLine>
+                                            </Sequence>
+                                            <Sequence DisplayName="Match Y Coord" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_155">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_134">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[OUT_strYCoord]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[matchesCoordinate.First.Groups(1).ToString.Trim]</InArgument>
+                                                </Assign.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Assign>
+                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="WriteLine_82" Text="[&quot;Y coordinate is &quot; + OUT_strYCoord]">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </WriteLine>
+                                            </Sequence>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                    <Sequence DisplayName="Get Postcode Of Loft" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_144">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesPostcodeOfLoft" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Postcode Of Loft" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_33" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?&lt;=\$\$)\w{2,4}\s?\w{2,4}(?=\s\$&quot; + strCoords + &quot;)&quot;]" RegexOption="IgnoreCase, Singleline" Result="[matchesPostcodeOfLoft]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:Matches>
+                                      <If Condition="[matchesPostcodeOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_96">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_137">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[OUT_strPostcodeOfLoft]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[OUT_strPostcode]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="WriteLine_76" Text="[&quot;Address Of Loft is &quot; + OUT_strAddressOfLoft]">
+                                        </If.Then>
+                                        <If.Else>
+                                          <Assign DisplayName="Assign Postcode Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_124">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[OUT_strPostcodeOfLoft]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[matchesPostcodeOfLoft.First.Groups(0).ToString.Trim]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                        </If.Else>
+                                      </If>
+                                      <If Condition="[OUT_strPostcodeOfLoft.ToLower = &quot;na&quot; or OUT_strPostcodeOfLoft.ToLower = &quot;n\a&quot; or OUT_strPostcodeOfLoft.ToLower = &quot;n/a&quot;]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_97">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Postcode Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_55">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Throw>
+                                        </If.Then>
+                                        <If.Else>
+                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_77" Text="[&quot;Postcode Of Loft is &quot; + OUT_strPostcodeOfLoft]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </WriteLine>
-                                        </Sequence>
-                                      </If.Else>
-                                    </If>
+                                        </If.Else>
+                                      </If>
+                                      <If Condition="[OUT_strPostcodeOfLoft.Replace(&quot; &quot;,&quot;&quot;).ToUpper = OUT_strPostcode.Replace(&quot; &quot;,&quot;&quot;).ToUpper]" DisplayName="If Postcodes match" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_107">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_165">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_135">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[OUT_strAddressOfLoft]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[OUT_strBusinessAddress]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_85" Text="[OUT_strAddressOfLoft]" />
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Get Address Of Loft" sap:VirtualizedContainerService.HintSize="376,333" sap2010:WorkflowViewState.IdRef="Sequence_143">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchesAddressOfLoft" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:Matches BuilderPattern="(?&lt;=Title\s).*?(?=\sForename)" DisplayName="Matches Address Of Loft" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_32" Input="[strPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Title\\s).*?(?=\\sForename)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?&lt;=Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$Address of loft \$\$Postcode \$GPS co-ordinates of loft \(X\/Y\) \$\$Easting Northing \$Form of Tenure \$Select the appropriate option Owner Tenant - year or less \$\$Tenant - more than a year \$).*?(?=\s\$\$&quot; + OUT_strPostcodeOfLoft + &quot;)&quot;]" RegexOption="IgnoreCase, Singleline" Result="[matchesAddressOfLoft]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:Matches>
+                                            <If Condition="[matchesAddressOfLoft.Count = 0]" DisplayName="If no matches are found" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_94">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Address Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_52">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Throw>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Assign DisplayName="Assign Address Of Loft" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_122">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[OUT_strAddressOfLoft]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[matchesAddressOfLoft.First.Groups(0).ToString.Trim]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                              </If.Else>
+                                            </If>
+                                            <If Condition="[OUT_strAddressOfLoft.ToLower = &quot;na&quot; or OUT_strAddressOfLoft.ToLower = &quot;n\a&quot; or OUT_strAddressOfLoft.ToLower = &quot;n/a&quot;]" DisplayName="If contains NA" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_95">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;No Address Of Loft on form.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_53">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Throw>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="304,254" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_123">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[OUT_strBusinessAddress]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[StrConv(OUT_strBusinessAddress, VbStrConv.ProperCase)]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="WriteLine_76" Text="[&quot;Address Of Loft is &quot; + OUT_strAddressOfLoft]">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </WriteLine>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
                                   </Sequence>
-                                </If.Else>
-                              </If>
-                            </Sequence>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
                           </Sequence>
                           <FlowStep.Next>
                             <x:Reference>__ReferenceID1</x:Reference>
@@ -3503,7 +3835,7 @@
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <av:Point x:Key="ShapeLocation">750.5,236.5</av:Point>
-                              <av:Size x:Key="ShapeSize">70,86.6666666666667</av:Size>
+                              <av:Size x:Key="ShapeSize">70,87</av:Size>
                               <av:PointCollection x:Key="TrueConnector">750.5,280 720.5,280 720.5,281 650.5,281</av:PointCollection>
                               <av:PointCollection x:Key="FalseConnector">820.5,280 870.5,280</av:PointCollection>
                             </scg:Dictionary>
@@ -3513,11 +3845,11 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">450.5,247</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
+                                  <av:Size x:Key="ShapeSize">200,66</av:Size>
                                   <av:PointCollection x:Key="ConnectorLocation">450.5,281 420.5,281 420.5,269.5 390,269.5</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Reset Values" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                              <Sequence DisplayName="Reset Values" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_75">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3593,17 +3925,17 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">190,127.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">290,196.833333333333 290,243.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,193.5 290,243.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Save PDF" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_53">
+      <Sequence DisplayName="Save PDF" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_53">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,51" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_5">
           <ui:CommentOut.Body>
             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_73">
               <sap:WorkflowViewStateService.ViewState>
@@ -3647,9 +3979,15 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:CommentOut>
-        <TryCatch DisplayName="Try Save PDF" sap:VirtualizedContainerService.HintSize="512,710" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+        <TryCatch DisplayName="Try Save PDF" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
           <TryCatch.Try>
-            <TryCatch DisplayName="Try Click Save" sap:VirtualizedContainerService.HintSize="474,483" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Click Save" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3657,7 +3995,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <TryCatch.Try>
-                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser PDF" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0e4178747bc23caad205bb25ab17eff7" Selector="&lt;html app='msedge.exe' title='Racing*' /&gt;" TimeoutMS="5000" UiBrowser="[OUT_browserPDFTab]">
+                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser PDF" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0e4178747bc23caad205bb25ab17eff7" Selector="&lt;html app='msedge.exe' title='Racing*' /&gt;" TimeoutMS="5000" UiBrowser="[OUT_browserPDFTab]">
                   <ui:BrowserScope.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -3696,10 +4034,10 @@
                 </ui:BrowserScope>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,321" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -3756,7 +4094,7 @@
             </TryCatch>
           </TryCatch.Try>
           <TryCatch.Catches>
-            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="478,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3772,7 +4110,7 @@
             </Catch>
           </TryCatch.Catches>
         </TryCatch>
-        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'File Name'" EmptyField="True" sap:VirtualizedContainerService.HintSize="512,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[IN_CurrentPDFFilePath]">
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'File Name'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[IN_CurrentPDFFilePath]">
           <ui:TypeInto.Target>
             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb65874a-40a2-4e63-a98a-0f8936e4876b" InformativeScreenshot="a691d456985622242bd330884bd0c4ea" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Save As' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd aaname='File name:' /&gt;">
               <ui:Target.TimeoutMS>
@@ -3789,8 +4127,8 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:TypeInto>
-        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="512,61" sap2010:WorkflowViewState.IdRef="WriteLine_44" Text="[IN_CurrentPDFFilePath]" />
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="512,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_44" Text="[IN_CurrentPDFFilePath]" />
+        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
           <ui:Click.CursorPosition>
             <ui:CursorPosition Position="Center">
               <ui:CursorPosition.OffsetX>
@@ -3817,7 +4155,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:Click>
-        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="512,22" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="AcroRd32">
+        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="AcroRd32">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3841,11 +4179,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,177</av:Point>
-          <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">100,246.333333333333 100,269.833333333333 190,269.833333333333</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">100,243 100,269 190,269</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Test Values" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_81">
+      <Sequence DisplayName="Test Values" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_81">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

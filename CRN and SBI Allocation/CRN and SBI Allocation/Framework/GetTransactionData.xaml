@@ -78,6 +78,7 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Get a transaction item from a specified source (e.g., Orchestrator queues, spreadsheets, databases, mailboxes or web APIs). &#xA;&#xA;This framework is setup by default to look for an Outlook MailMessage from a config-specified mailbox, this should be changed on a work package basis with out_TransactionItem being set to a single transaction from whatever source is required.&#xA;&#xA;If there are no transaction items remaining, out_TransactionItem should be set to Nothing, which leads to the End Process state. &#xA;&#xA;out_boolLastTransaction should be set to True where it is possible to determine that a transaction is the last in the batch. If this is not possible to derive then changes will need to be made to the &quot;Final Transaction&quot; transition at the framework's parent level. " DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="960,1907" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -118,7 +119,7 @@
             <av:PointCollection x:Key="ConnectorLocation">300,179.5 300,229.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Check on Emails I am working on" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
+        <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[IN_browserCRM]" BrowserType="Edge" DisplayName="Check on Emails I am working on" sap:VirtualizedContainerService.HintSize="434,490" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="a5a82de9a0832271609d509be928c4b6">
           <ui:BrowserScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -254,7 +255,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">509.5,247 509.5,153 400,153</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" Caption="Incorrect view selected" DisplayName="Incorrect View Pop Up" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Please select the view 'Items I am working on'.&quot; + System.Environment.NewLine + &quot;When you have selected this view, please press Ok.&quot;]">
+                <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" Caption="Incorrect view selected" DisplayName="Incorrect View Pop Up" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Please select the view 'Emails I am working on - Phase 1 Robot'.&quot; + System.Environment.NewLine + &quot;When you have selected this view, please press Ok.&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>

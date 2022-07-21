@@ -55,7 +55,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="39">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -95,6 +95,7 @@
       <AssemblyReference>System.Configuration.Install</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " sap:VirtualizedContainerService.HintSize="634,1772" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -185,78 +186,30 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Read PDF Form" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Read PDF Form.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strTitle">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strTitle" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFirstName">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFirstName" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLastName">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strLastName" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessName">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strBusinessName" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strSBI" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessAddress">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strBusinessAddress" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcode">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strPostcode" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPhoneNumber">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strPhoneNumber" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strVoicemail">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strVoicemail" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strEmailAddress">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strEmailAddress" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLegalStatus">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strLegalStatus" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCharityNumber">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCharityNumber" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCompaniesHouseNumber">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCompaniesHouseNumber" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessType">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strBusinessType" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strAddressOfLoft">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strAddressOfLoft" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strXCoord">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strX" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcodeOfLoft">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strPostcodeOfLoft" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strYCoord">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strY" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFormOfTenure">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFormOfTenure" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strNumberType">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strNumberType" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="s:String[]" x:Key="OUT_arrAddressLines">
-                    <mva:VisualBasicReference x:TypeArguments="s:String[]" ExpressionText="arrAddressLines" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserPDFTab">
-                    <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="browserPDFTab" />
-                  </OutArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="IN_AdobeFilePath">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="inout_Config(&quot;AdobeFilePath&quot;).ToString" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="IN_CurrentPDFFilePath">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="inout_Config(&quot;CurrentPDFFilePath&quot;).ToString" />
-                  </InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strTitle">[strTitle]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFirstName">[strFirstName]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLastName">[strLastName]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessName">[strBusinessName]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">[strSBI]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessAddress">[strBusinessAddress]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcode">[strPostcode]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPhoneNumber">[strPhoneNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strVoicemail">[strVoicemail]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strEmailAddress">[strEmailAddress]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strLegalStatus">[strLegalStatus]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCharityNumber">[strCharityNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strCompaniesHouseNumber">[strCompaniesHouseNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strBusinessType">[strBusinessType]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strAddressOfLoft">[strAddressOfLoft]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strXCoord">[strX]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strPostcodeOfLoft">[strPostcodeOfLoft]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strYCoord">[strY]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strFormOfTenure">[strFormOfTenure]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="OUT_strNumberType">[strNumberType]</OutArgument>
+                  <OutArgument x:TypeArguments="s:String[]" x:Key="OUT_arrAddressLines">[arrAddressLines]</OutArgument>
+                  <OutArgument x:TypeArguments="ui:Browser" x:Key="OUT_browserPDFTab">[browserPDFTab]</OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="IN_AdobeFilePath">[inout_Config("AdobeFilePath").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="IN_CurrentPDFFilePath">[inout_Config("CurrentPDFFilePath").ToString]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -304,13 +257,23 @@
                               <av:PointCollection x:Key="ConnectorLocation">300,681.5 300,731.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Search For Customer Using Name" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Search For Customer Using Name.xaml">
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Search For Customer Using Name" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Search For Customer Using Name.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[IN_browserRP]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strFirstName">[strFirstName]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strLastName">[strLastName]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">[strBusinessAddress]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">[strEmailAddress]</InArgument>
+                              <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">
+                                <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserRP" />
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strFirstName">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strFirstName.Split(&quot; &quot;c).First" />
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strLastName">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strLastName" />
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBusinessAddress" />
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strEmailAddress" />
+                              </InArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -358,42 +321,18 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Create A Business" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" Level="Info" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Process\Process Subflows\Create A Business.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">
-                                        <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="IN_browserRP" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="OUT_strCRN" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strBusinessName">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBusinessName" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strEmailAddress" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strNumber">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strPhoneNumber" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strNumberType">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strNumberType" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strLegalStatus">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strLegalStatus" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strTypeOfBusiness">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBusinessType" />
-                                      </InArgument>
-                                      <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">
-                                        <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strSBI" />
-                                      </OutArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBusinessAddress" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strPostcode">
-                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strPostcode" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="s:String[]" x:Key="IN_arrAddressLines">
-                                        <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="arrAddressLines" />
-                                      </InArgument>
+                                      <InArgument x:TypeArguments="ui:Browser" x:Key="IN_browserRP">[IN_browserRP]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strCRN">[OUT_strCRN]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strBusinessName">[strBusinessName]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strEmailAddress">[strEmailAddress]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strNumber">[strPhoneNumber]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strNumberType">[strNumberType]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strLegalStatus">[strLegalStatus]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strTypeOfBusiness">[strBusinessType]</InArgument>
+                                      <OutArgument x:TypeArguments="x:String" x:Key="OUT_strSBI">[strSBI]</OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strAddress">[strBusinessAddress]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="IN_strPostcode">[strPostcode]</InArgument>
+                                      <InArgument x:TypeArguments="s:String[]" x:Key="IN_arrAddressLines">[arrAddressLines]</InArgument>
                                     </ui:InvokeWorkflowFile.Arguments>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
