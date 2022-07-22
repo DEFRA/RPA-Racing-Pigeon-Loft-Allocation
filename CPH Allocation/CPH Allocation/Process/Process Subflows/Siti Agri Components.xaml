@@ -28,7 +28,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1179,1191</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1004,1318</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Siti_Agri_Login___Navigate_to_Siti_Farmer_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -110,11 +110,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">350,127.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,68</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">450,195.5 450,255.833333333333</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">450,193.5 450,255.833333333333</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Search by SBI and check for match" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence DisplayName="Search by SBI and check for match" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -289,11 +289,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">135,265.333333333333</av:Point>
-                  <av:Size x:Key="ShapeSize">200,68</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">235,333.333333333333 235,363.333333333333 457.5,363.333333333333 457.5,445.833333333333</av:PointCollection>
+                  <av:Size x:Key="ShapeSize">200,66</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">235,331.333333333333 235,361.333333333333 457.5,361.333333333333 457.5,445.833333333333</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Open match and check for CPH" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Open match and check for CPH" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
                 </Sequence.Variables>
@@ -450,12 +450,12 @@
                 </If>
               </Sequence>
               <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID7" Condition="[boo_NoCHP=True]" DisplayName="No CHP Exists?" sap:VirtualizedContainerService.HintSize="85,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                <FlowDecision x:Name="__ReferenceID7" Condition="[boo_NoCHP=True]" DisplayName="No CHP Exists?" sap:VirtualizedContainerService.HintSize="86,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <av:Point x:Key="ShapeLocation">415,445.833333333333</av:Point>
-                      <av:Size x:Key="ShapeSize">85,87</av:Size>
+                      <av:Size x:Key="ShapeSize">86,87</av:Size>
                       <av:PointCollection x:Key="FalseConnector">500,489.333333333333 530,489.333333333333 530,563.5 660,563.5 660,533.5</av:PointCollection>
                       <av:PointCollection x:Key="TrueConnector">415,489.333333333333 175,489.333333333333 175,565.333333333333</av:PointCollection>
                     </scg:Dictionary>
@@ -465,11 +465,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">75,565.333333333333</av:Point>
-                          <av:Size x:Key="ShapeSize">200,68</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">175,633.333333333333 175,663.333333333333 475,663.333333333333 475,703.333333333333</av:PointCollection>
+                          <av:Size x:Key="ShapeSize">200,66</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">175,631.333333333333 175,661.333333333333 475,661.333333333333 475,703.333333333333</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Create CHP No." sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence DisplayName="Create CHP No." sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="ui:UiElement" Name="Test" />
                           <Variable x:TypeArguments="x:Boolean" Name="booCoordsMatch" />
@@ -923,12 +923,12 @@
                         </Sequence>
                       </Sequence>
                       <FlowStep.Next>
-                        <FlowDecision x:Name="__ReferenceID4" Condition="[inout_Config(&quot;boolPausePoint1&quot;).ToString.ToUpper = &quot;TRUE&quot;]" DisplayName="Breakpoint 1?" sap:VirtualizedContainerService.HintSize="78,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                        <FlowDecision x:Name="__ReferenceID4" Condition="[inout_Config(&quot;boolPausePoint1&quot;).ToString.ToUpper = &quot;TRUE&quot;]" DisplayName="Breakpoint 1?" sap:VirtualizedContainerService.HintSize="77,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <av:Point x:Key="ShapeLocation">436,703.333333333333</av:Point>
-                              <av:Size x:Key="ShapeSize">78,87</av:Size>
+                              <av:Size x:Key="ShapeSize">77,87</av:Size>
                               <av:PointCollection x:Key="FalseConnector">514,746.833333333333 610,746.833333333333 610,1138 580,1138</av:PointCollection>
                               <av:PointCollection x:Key="TrueConnector">436,746.833333333333 420,746.833333333333 420,816 480,816 480,846</av:PointCollection>
                             </scg:Dictionary>
@@ -938,11 +938,11 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">380,846</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,208</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">480,1054 480,1104</av:PointCollection>
+                                  <av:Size x:Key="ShapeSize">200,198</av:Size>
+                                  <av:PointCollection x:Key="ConnectorLocation">480,1044 480,1104</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Flowchart sap2010:Annotation.AnnotationText="A title and message is passed into the workflow. The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Breakpoint 1" sap:VirtualizedContainerService.HintSize="200,208" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+                              <Flowchart sap2010:Annotation.AnnotationText="A title and message is passed into the workflow. The is an assumption that if the user clicks yes then the process will continue. If the user chooses no then the workflow will throw a business exception to stop the process" DisplayName="Breakpoint 1" sap:VirtualizedContainerService.HintSize="200,198" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                                 <Flowchart.Variables>
                                   <Variable x:TypeArguments="x:String" Name="strButton" />
                                   <Variable x:TypeArguments="x:String" Default="&lt;P&gt;The robot has completed all actions to pausepoint 1&lt;/P&gt;&lt;BR&gt;&lt;P&gt;Please check the following steps have been completed successfully against the form attached to the email.&lt;/P&gt;&lt;P&gt;1. Each loft address on the form has had a CPH created with the correct details.,/P&gt;&lt;/BR&gt;&lt;P&gt;Once you have checked these actions were performed successfully, press continue on the pop up.&lt;/P&gt;&lt;BR&gt;" Name="IN_PopupMessage" />
@@ -1033,16 +1033,16 @@
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <av:Point x:Key="ShapeLocation">380,1104</av:Point>
-                                      <av:Size x:Key="ShapeSize">200,68</av:Size>
+                                      <av:Size x:Key="ShapeSize">200,66</av:Size>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Create case" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <Sequence DisplayName="Create case" sap:VirtualizedContainerService.HintSize="476,4029" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Case Management'" sap:VirtualizedContainerService.HintSize="438.666666666667,106" sap2010:WorkflowViewState.IdRef="Click_28" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Case Management'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_28" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -1064,7 +1064,7 @@
                                         </ui:Target>
                                       </ui:Click.Target>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'New case package'" sap:VirtualizedContainerService.HintSize="438.666666666667,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'New case package'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -1076,7 +1076,7 @@
                                         </ui:CursorPosition>
                                       </ui:Click.CursorPosition>
                                       <ui:Click.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a181b5c0-8b66-494b-8b9e-30d4275ef4e1" InformativeScreenshot="2af1058c6d7a0df3f7f2fa98da4e99e9" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl id='x-auto-*' tag='IFRAME' /&gt;&lt;webctrl tag='A' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a181b5c0-8b66-494b-8b9e-30d4275ef4e1" InformativeScreenshot="2af1058c6d7a0df3f7f2fa98da4e99e9" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&#xD;&#xA;&lt;webctrl tag='IFRAME' idx='2' /&gt;&#xD;&#xA;&lt;webctrl tag='A' aaname='New case package ' /&gt;&#xD;&#xA;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -1086,7 +1086,7 @@
                                         </ui:Target>
                                       </ui:Click.Target>
                                     </ui:Click>
-                                    <TryCatch DisplayName="Try Catch - Retry clicking 'New case package'" sap:VirtualizedContainerService.HintSize="438.666666666667,344" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                    <TryCatch DisplayName="Try Catch - Retry clicking 'New case package'" sap:VirtualizedContainerService.HintSize="434,575" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                       <TryCatch.Try>
                                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
@@ -1100,7 +1100,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9c83e55-23b5-4fd9-900c-50c9741171c3" InformativeScreenshot="314290dd4b73fcdc5995f8ff63edc19e" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl id='x-auto-*' tag='IFRAME' /&gt;&lt;webctrl aaname='Save' tag='SPAN' /&gt;" TimeoutMS="5000">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9c83e55-23b5-4fd9-900c-50c9741171c3" InformativeScreenshot="314290dd4b73fcdc5995f8ff63edc19e" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&#xD;&#xA;&lt;webctrl tag='IFRAME' idx='2' /&gt;&#xD;&#xA;&lt;webctrl aaname='Save' tag='SPAN' /&gt;&#xD;&#xA;" TimeoutMS="5000">
                                               <ui:Target.WaitForReady>
                                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                                               </ui:Target.WaitForReady>
@@ -1109,10 +1109,10 @@
                                         </ui:Click>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,413" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -1138,7 +1138,7 @@
                                                   </ui:CursorPosition>
                                                 </ui:Click.CursorPosition>
                                                 <ui:Click.Target>
-                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a181b5c0-8b66-494b-8b9e-30d4275ef4e1" InformativeScreenshot="2af1058c6d7a0df3f7f2fa98da4e99e9" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl id='x-auto-*' tag='IFRAME' /&gt;&lt;webctrl tag='A' /&gt;">
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a181b5c0-8b66-494b-8b9e-30d4275ef4e1" InformativeScreenshot="2af1058c6d7a0df3f7f2fa98da4e99e9" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl tag='IFRAME' idx='2' /&gt;&lt;webctrl tag='A' aaname='New case package ' /&gt;">
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
                                                     </ui:Target.TimeoutMS>
@@ -1160,7 +1160,7 @@
                                                   </ui:CursorPosition>
                                                 </ui:Click.CursorPosition>
                                                 <ui:Click.Target>
-                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9c83e55-23b5-4fd9-900c-50c9741171c3" InformativeScreenshot="314290dd4b73fcdc5995f8ff63edc19e" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl id='x-auto-*' tag='IFRAME' /&gt;&lt;webctrl aaname='Save' tag='SPAN' /&gt;">
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9c83e55-23b5-4fd9-900c-50c9741171c3" InformativeScreenshot="314290dd4b73fcdc5995f8ff63edc19e" Selector="&lt;html app='msedge.exe' title='Farm viewer - SITIFarmer*' /&gt;&lt;webctrl tag='IFRAME' idx='2' /&gt;&lt;webctrl aaname='Save' tag='SPAN' /&gt;">
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
                                                     </ui:Target.TimeoutMS>
@@ -1175,7 +1175,7 @@
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - Forms" sap:VirtualizedContainerService.HintSize="438.666666666667,134" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="FORMS">
+                                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - Forms" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="FORMS">
                                       <ui:SelectItem.Items>
                                         <scg:List x:TypeArguments="x:String" Capacity="4">
                                           <x:String>Select</x:String>
@@ -1195,7 +1195,7 @@
                                         </ui:Target>
                                       </ui:SelectItem.Target>
                                     </ui:SelectItem>
-                                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - CHP" sap:VirtualizedContainerService.HintSize="438.666666666667,134" sap2010:WorkflowViewState.IdRef="SelectItem_6" Item="CPH">
+                                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - CHP" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="SelectItem_6" Item="CPH">
                                       <ui:SelectItem.Items>
                                         <scg:List x:TypeArguments="x:String" Capacity="16">
                                           <x:String>ALL</x:String>
@@ -1223,7 +1223,7 @@
                                         </ui:Target>
                                       </ui:SelectItem.Target>
                                     </ui:SelectItem>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Plus icon" sap:VirtualizedContainerService.HintSize="438.666666666667,106" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Plus icon" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -1245,7 +1245,7 @@
                                         </ui:Target>
                                       </ui:Click.Target>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Case" sap:VirtualizedContainerService.HintSize="438.666666666667,106" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Case" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -1571,10 +1571,7 @@
                     </FlowStep>
                   </FlowDecision.True>
                   <FlowDecision.False>
-                    <FlowDecision x:Name="__ReferenceID12" DisplayName="CHP Exists?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
-                      <FlowDecision.Condition>
-                        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="strCPHCellValue IsNot Nothing" />
-                      </FlowDecision.Condition>
+                    <FlowDecision x:Name="__ReferenceID12" Condition="[strCPHCellValue IsNot Nothing]" DisplayName="CHP Exists?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
